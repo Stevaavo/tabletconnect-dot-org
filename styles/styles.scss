@@ -1,0 +1,41 @@
+
+
+// $primary: purple;
+// This is the place to override Bulma settings
+
+
+@import "../node_modules/bulma/bulma.sass";
+
+.logo-font{
+    // font-family: "Fugaz One";
+    font-family: "Poiret One";
+    // color: purple !important;
+}
+
+.highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, $success-light 50%);
+    font-weight: bold;
+  }
+
+
+// .scrollable-table tbody {
+//     height: 20vh;
+//     display: block;
+//     overflow-y: scroll;
+//     width: 100%;
+// }
+
+// .scrollable-table thead,
+// tbody tr {
+//     display: table;
+//     width: 100%;
+//     table-layout: fixed;
+// }
+
+// .offline-cell {
+//     background-color: LightGrey;
+//     color: grey;
+//     font-style: italic;
+// }
+
+@import "../node_modules/animate.css/animate.css";
