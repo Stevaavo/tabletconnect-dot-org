@@ -51,8 +51,9 @@ export default class Home extends React.Component {
 
                 <p className="title is-size-5-mobile">Get them onto video chat, without asking them to learn any technology.</p> */}
 
-                <p className="title is-size-5-mobile">Video-chat with parents/grandparents under COVID lockdown, <strong className="highlight">without asking them to learn any technology.</strong></p>
+                <p className="title is-size-5-mobile">Video-chat a parent/grandparent isolated by COVID, <strong className="highlight">without asking them to learn any technology.</strong></p>
 
+                <p className="title is-size-5-mobile">No need for them to tap or touch anything.</p>
 
                 {/* <p className="title is-size-5-mobile"><strong className="highlight">Video chat</strong> with parents/grandparents under COVID lockdown.</p> */}
 
@@ -62,8 +63,7 @@ export default class Home extends React.Component {
 
                 <br className="is-hidden-mobile"/>
 
-                <p className="subtitle is-size-6-mobile">Video chat is a great way to keep in touch with friends and family under COVID lockdown. However,
-                many senior citizens don't have a smartphone or computer, or the technical skill to use one for a video call.</p>
+                {/* <p className="subtitle is-size-6-mobile">Many of us are no longer able to visit older relatives due to the risk of COVID.</p> */}
                 
 
                 {/* <p className="subtitle is-size-6-mobile">Video chat has allowed many of us to maintain close ties with friends and family in spite of the coronavirus.  However,
@@ -79,7 +79,7 @@ export default class Home extends React.Component {
                 {/* <p className="subtitle is-size-6-mobile"></p> */}
                 <p className="subtitle is-size-6-mobile">You can give the Skype username to other friends and relatives, so that they can video-call your parent/grandparent as well.</p>
                 <p className="subtitle is-size-6-mobile">I originally set up a tablet like this for my grandmother, who has been cut off from visitors for several weeks now
-                due to COVID.  It has worked great for her!</p>
+                due to the crisis.  It has worked great for her, so I'm posting instructions here for others.</p>
 
                 
                 </div>
