@@ -85,17 +85,28 @@ export default class Home extends React.Component {
                 </div>
 
 
-              <div className="column">
+              {/* <div className="column">
+
+              </div> */}
+
+
+
+              <div className="column has-text-centered	">
+
+                <p className="is-hidden-mobile">
+                  <video autoPlay muted controls id="myVideo-desktop">
+                    <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
+                  </video>
+                </p>
+
+                <p className="is-hidden-tablet">
+                  <video autoPlay muted controls loop id="myVideo-mobile">
+                    <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
+                  </video>
+                </p>
 
               </div>
 
-
-
-              <div className="column is-one-third">
-
-                {/* {this.state.userCheckComplete && <RegisterOrLoginBox showLoginScreen={this.props.query.login} email={this.state.user.email} phone={this.state.user.phone} userId={this.state.user.user_id} updateUser={this.updateUser}/>} */}
-                
-              </div>
             </div>
           </div>
 
