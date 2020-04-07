@@ -46,7 +46,7 @@ export default class Header extends React.Component {
                                         <p className="control">
 
                                             <Link href="/instructions-fast">
-                                                <a className="button is-link">
+                                                <a className="button is-success">
                                                     <span className="icon">
                                                         <i className="fas fa-book-open"></i>
                                                     </span>
@@ -57,7 +57,7 @@ export default class Header extends React.Component {
                                             </Link>
                                         </p>
                                         <p className="control">
-                                            <a className="button is-success" href="mailto:help@tabletconnect.org">
+                                            <a className="button is-link" href="mailto:help@tabletconnect.org">
                                                 <span className="icon">
                                                     <i className="fas fa-hands-helping"></i>
                                                 </span>

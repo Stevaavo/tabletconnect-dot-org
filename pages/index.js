@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/styles.scss'
-// import Link from 'next/link'
+import Link from 'next/link'
 import Header from '../components/Header'
 // import Head from '../components/head'
 // import Nav from '../components/nav'
@@ -80,6 +80,29 @@ export default class Home extends React.Component {
                 <p className="subtitle is-size-6-mobile">You can give the Skype username to other friends and relatives, so that they can video-call your parent/grandparent as well.</p>
                 <p className="subtitle is-size-6-mobile">I originally set up a tablet like this for my grandmother, who has been cut off from visitors for several weeks now
                 due to the crisis.  It has worked great for her, so I'm posting instructions here for others.</p>
+
+
+                <Link  href="/instructions">
+                  <button className="button is-fullwidth is-success">
+                    <span className="icon">
+                        <i className="fas fa-book-open"></i>
+                    </span>
+                    <span>
+                      Read the Instructions
+                    </span>
+                  </button>
+                </Link>
+
+                <br />
+                
+                <button className="button is-fullwidth is-link">
+                  <span className="icon">
+                      <i className="fas fa-hands-helping"></i>
+                  </span>
+                  <span>
+                    Get Help from a Volunteer
+                  </span>
+                </button>
 
                 
                 </div>
