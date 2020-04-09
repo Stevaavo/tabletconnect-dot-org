@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/styles.scss'
 // import Link from 'next/link'
+import Encouragement from '../components/Encouragement'
 import BuyTabletInstructions from '../components/BuyTabletInstructions'
 import BuyCableInstructions from '../components/BuyCableInstructions'
 import SetupInstructions from '../components/SetupInstructions'
@@ -61,6 +62,8 @@ export default class Home extends React.Component {
   render() {
 
     const remainingInstructions = <div className={`${this.state.fadeOut ? "animated fadeOut" : "animated fadeIn" }`}>
+
+        <Encouragement />
 
         <BuyTabletInstructions
             techSavvy={this.props.techSavvy} 

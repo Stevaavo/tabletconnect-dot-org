@@ -36,6 +36,21 @@ export default class Home extends React.Component {
         <div className="hero-body">
           <div className="container">
             <div className = "columns is-vcentered">
+
+
+              <div className="column has-text-centered is-hidden-tablet">
+
+                  <p className="">
+                    <video autoPlay muted controls loop id="myVideo-mobile">
+                      <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
+                    </video>
+                  </p>
+
+              </div>
+
+
+
+
               <div className="column is-half">
 
                 {/* <p className="title is-size-5-mobile">Video-chat a parent/grandparent, without asking them to learn any technology.</p> */}
@@ -54,7 +69,7 @@ export default class Home extends React.Component {
 
                 <p className="title is-size-5-mobile">Video-chat a parent/grandparent isolated by COVID, <strong className="highlight">without asking them to learn any technology.</strong></p>
 
-                <p className="title is-size-5-mobile">No need for them to tap or touch anything.</p>
+                <p className="title is-size-5-mobile">No need for them to tap or touch anything. They just need to plug it in.</p>
 
                 {/* <p className="title is-size-5-mobile"><strong className="highlight">Video chat</strong> with parents/grandparents under COVID lockdown.</p> */}
 
@@ -75,12 +90,12 @@ export default class Home extends React.Component {
 
                 <p className="subtitle is-size-6-mobile">This website will show you how to buy and set up a dedicated Skype tablet that you can mail to an older relative.</p>
                 <p className="subtitle is-size-6-mobile">The tablet will <strong className="highlight">automatically pick up your video calls</strong>, so your relative doesn't 
-                need to learn how to use it.  They just need to keep the tablet somewhere they can see/hear you when you call.</p>
+                need to learn how to use it.  They just need to keep it somewhere they can see/hear you when you call.</p>
                 <p className="subtitle is-size-6-mobile">The tablet will connect to the internet through the cellular network, so <strong className="highlight">no wifi is required</strong>.</p>
                 {/* <p className="subtitle is-size-6-mobile"></p> */}
-                <p className="subtitle is-size-6-mobile">You can give the Skype username to other friends and relatives, so that they can video-call your parent/grandparent as well.</p>
+                <p className="subtitle is-size-6-mobile">You can give the person's Skype name to other friends and relatives, so that they can video-call the tablet as well.</p>
                 <p className="subtitle is-size-6-mobile">I originally set up a tablet like this for my grandmother, who has been cut off from visitors for several weeks now
-                due to the crisis.  It has worked great for her, so I'm posting instructions here for others.</p>
+                due to the crisis.  It has worked very well for her.</p>
 
 
                 <Link  href="/instructions">
@@ -117,16 +132,10 @@ export default class Home extends React.Component {
 
 
 
-              <div className="column has-text-centered	">
+              <div className="column has-text-centered is-hidden-mobile">
 
-                <p className="is-hidden-mobile">
-                  <video autoPlay muted controls id="myVideo-desktop">
-                    <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
-                  </video>
-                </p>
-
-                <p className="is-hidden-tablet">
-                  <video autoPlay muted controls loop id="myVideo-mobile">
+                <p>
+                  <video autoPlay muted loop id="myVideo-desktop">
                     <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
                   </video>
                 </p>
@@ -140,7 +149,7 @@ export default class Home extends React.Component {
       </section>
 
       <Footer />
-      
+
     </div>
   }
 
