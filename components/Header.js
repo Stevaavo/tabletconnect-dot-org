@@ -45,7 +45,7 @@ export default class Header extends React.Component {
                                     <div className="field is-grouped">
                                         <p className="control">
 
-                                            <Link href="/instructions-fast">
+                                            <Link href="/instructions">
                                                 <a className="button is-success">
                                                     <span className="icon">
                                                         <i className="fas fa-book-open"></i>
@@ -57,12 +57,14 @@ export default class Header extends React.Component {
                                             </Link>
                                         </p>
                                         <p className="control">
-                                            <a className="button is-link" href="mailto:help@tabletconnect.org">
-                                                <span className="icon">
-                                                    <i className="fas fa-hands-helping"></i>
-                                                </span>
-                                                <span>Tech Support (Volunteer)</span>
-                                            </a>
+                                            <Link href="support">
+                                                <a className="button is-link" href="mailto:help@tabletconnect.org">
+                                                    <span className="icon">
+                                                        <i className="fas fa-hands-helping"></i>
+                                                    </span>
+                                                    <span>Tech Support (Volunteer)</span>
+                                                </a>
+                                            </Link>
                                         </p>
                                     </div>
                                 </div>

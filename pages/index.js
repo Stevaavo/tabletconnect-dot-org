@@ -5,6 +5,7 @@ import Header from '../components/Header'
 // import Head from '../components/head'
 // import Nav from '../components/nav'
 // import user from '../utils/user'
+import Footer from '../components/Footer'
 
 // import RegisterOrLoginBox from '../components/tabs/RegisterOrLoginBox'
 
@@ -95,14 +96,16 @@ export default class Home extends React.Component {
 
                 <br />
                 
-                <button className="button is-fullwidth is-link">
-                  <span className="icon">
-                      <i className="fas fa-hands-helping"></i>
-                  </span>
-                  <span>
-                    Get Help from a Volunteer
-                  </span>
-                </button>
+                <Link  href="/support">
+                  <button className="button is-fullwidth is-link">
+                    <span className="icon">
+                        <i className="fas fa-hands-helping"></i>
+                    </span>
+                    <span>
+                      Get Help from a Volunteer
+                    </span>
+                  </button>
+                </Link>
 
                 
                 </div>
@@ -135,6 +138,9 @@ export default class Home extends React.Component {
 
         </div>
       </section>
+
+      <Footer />
+      
     </div>
   }
 

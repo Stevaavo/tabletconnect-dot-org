@@ -1,8 +1,8 @@
 
 
 const config = {
-    priceUpdateFrequency: 600000,
-    apiUrl: "http://localhost:3001/api"
+    youtubeWidth: "840",
+    youtubeHeight: "473"
 }
 
 export default config
