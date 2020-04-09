@@ -44,73 +44,62 @@ export default class Home extends React.Component {
   render() {
 
 
-    const notSavvyText = <section className="section">
-        <div className="container">
+    const notSavvyText = <div className="content">
 
-            <h1 className="title">Part 3: Buying a Long Charging Cable</h1>
+        <p>
+            The tablet will probably come with a charging cable that is about 4 feet long.  I recommend buying a extra-long cable to use instead, so that the 
+            device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.  This is especially true if the tablet needs
+            to reach the side of a hospital bed.
+        </p>
 
-            <div className="content">
+        <p>
+            Just make sure the tablet isn't placed in a location where the long cable will pose a tripping hazard for your parent/grandparent.
+        </p>
 
-                <p>
-                    The tablet will probably come with a charging cable that is about 4 feet long.  I recommend buying a extra-long cable to use instead, so that the 
-                    device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.  This is especially true if the tablet needs
-                    to reach the side of a hospital bed.
-                </p>
+        
+        <p>
+            If you're going with a Samsung Galaxy Tab A 8", or an Alcatel Joy Tab, I recommend <a href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 
+            25-foot microUSB cable</a> that I bought for my grandmother.  It's definitely overkill, but it will get the job done.
+        </p>
 
-                
-                <p>
-                    If you're going with a Samsung Galaxy Tab A 8", or an Alcatel Joy Tab, I recommend <a href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 
-                    25-foot microUSB cable</a> that I bought for my grandmother.  It's definitely overkill, but it will get the job done.
-                </p>
+        <p>
+            Other tablets (such as the Samsung Galaxy Tab A 8.4") may require a different cable type called "USB-C."  I haven't tested any extra-long USB-C cables, 
+            but <a href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot cable</a> comes from a good brand.
+        </p>
 
-                <p>
-                    Other tablets (such as the Samsung Galaxy Tab A 8.4") may require a different cable type called "USB-C."  I haven't tested any extra-long USB-C cables, but 
-                    <a href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot cable</a> 
-                    comes from a good brand.
-                </p>
+        <p>
+            If you're not sure which cable your tablet needs, I'd suggest buying both, and then seeing which one fits.  
+            You can also reach out to me here and I can try to help you figure it out.
+        </p>
 
-                <p>
-                    If you're not sure which cable your tablet needs, I'd suggest buying both, and then seeing which one fits.  
-                    You can also reach out to me here and I can try to help you figure it out.
-                </p>
+    </div>
 
-            </div>
+    const savvyText = <div className="content">
 
+        <p>
+            The tablet will come with a charging cable that is about 4 feet long.  I recommend buying a extra-long cable to use instead, so that the 
+            device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.  This is especially true if the tablet needs
+            to reach the side of a hospital bed.
+        </p>
 
-        </div>
-    </section>
+        <p>
+            Just make sure the tablet isn't placed in a location where the long cable will pose a tripping hazard for your parent/grandparent.
+        </p>
+        
+        <p>
+            If you're going with the 2019 Samsung Galaxy Tab A 8" that I recommended above, it uses a microUSB charging port.  
+            I recommend <a href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 25-foot microUSB cable</a> that I bought for my grandmother.  
+            It's definitely overkill, but it will get the job done.
+        </p>
 
-    const savvyText = <section className="section">
-        <div className="container">
+        <p>
+            Other tablets, or more recent versions of the Galaxy Tab A, might have a USB-C type charging port.  I haven't tested any extra-long USB-C cables, 
+            but <a href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot cable</a> comes from a good brand.
+        </p>
 
-            <h1 className="title">Part 3: Buying a Long Charging Cable</h1>
-
-            <div className="content">
-
-                <p>
-                    The tablet will come with a charging cable that is about 4 feet long.  I recommend buying a extra-long cable to use instead, so that the 
-                    device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.  This is especially true if the tablet needs
-                    to reach the side of a hospital bed.
-                </p>
-
-                
-                <p>
-                    If you're going with the 2019 Samsung Galaxy Tab A 8" that I recommended above, it uses a microUSB charging port.  
-                    I recommend <a href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 25-foot microUSB cable</a> that I bought for my grandmother.  
-                    It's definitely overkill, but it will get the job done.
-                </p>
-
-                <p>
-                    Other tablets, or more recent versions of the Galaxy Tab A, might have a USB-C type charging port.  I haven't tested any extra-long USB-C cables, 
-                    but <a href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot cable</a> comes from a good brand.
-                </p>
+    </div>
 
 
-            </div>
-
-
-        </div>
-    </section>
     
 
     return <div className="container">
@@ -119,8 +108,27 @@ export default class Home extends React.Component {
             <ul></ul>
         </div>
 
-        {this.props.techSavvy ? savvyText : notSavvyText}
+        <section className="section">
+            <div className="container">
 
+                <h1 className="title">Part 3: Buying a Long Charging Cable</h1>
+
+                <div className="columns is-vcentered is-centered">
+
+                    <div className="column">
+                        {this.props.techSavvy ? savvyText : notSavvyText}
+                    </div>
+                
+                    <div className="column is-one-third">
+                        <figure class="image">
+                            <img src="/static/usb.jpg" />
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
 
     </div>

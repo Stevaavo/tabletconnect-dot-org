@@ -114,7 +114,7 @@ export default class Home extends React.Component {
             </p>
 
             <p>
-                It will also remain connected if your parent/grandparent goes traveling, or in the unfortunate event that they need to visit a hospital.
+                It will also remain connected if your parent/grandparent travels domestically, moves, or in the unfortunate event that they need to visit a hospital.
             </p>
 
             <p>
