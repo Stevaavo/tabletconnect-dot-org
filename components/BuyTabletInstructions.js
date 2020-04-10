@@ -3,6 +3,8 @@ import '../styles/styles.scss'
 // import Link from 'next/link'
 import BuyTabletInstructions from '../components/BuyTabletInstructions'
 import TableOfTablets from './TableOfTablets'
+import { initGA, logPageView, logEvent } from '../utils/analytics'
+import TrackedLink from '../components/TrackedLink'
 
 
 export default class Home extends React.Component {
@@ -69,7 +71,8 @@ export default class Home extends React.Component {
             </p>
 
             <p>
-                You can buy the international version of the Galaxy Tab A in the 8" size for <a href="https://www.amazon.com/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G">about $160 on Amazon</a>. 
+                You can buy the international version of the Galaxy Tab A in the 8" size 
+                for <TrackedLink href="https://www.amazon.com/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G" >about $160 on Amazon</TrackedLink>. 
                 The international version should work for you if your phone carrier uses the "GSM" phone standard. 
                 Within the United States, this includes <strong className="highlight">AT&T</strong>, <strong className="highlight">T-Mobile</strong>, <strong className="highlight">MetroPCS</strong> and <strong className="highlight">Cricket Wireless</strong>. 
                 it should also work for <strong className="highlight">most carriers outside the United States</strong>.  
