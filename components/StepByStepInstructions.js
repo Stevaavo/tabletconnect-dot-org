@@ -9,6 +9,8 @@ import TestCallInstructions from './CallingInstructions'
 import MarkingInstructions from '../components/MarkingInstructions'
 import ShipInstructions from '../components/ShipInstructions'
 import OnboardInstructions from '../components/OnboardInstructions'
+import { initGA, logPageView, logEvent } from '../utils/analytics'
+
 
 
 export default class Home extends React.Component {
