@@ -3,6 +3,7 @@ import '../styles/styles.scss'
 // import Link from 'next/link'
 import BuyTabletInstructions from '../components/BuyTabletInstructions'
 import TableOfTablets from './TableOfTablets'
+import TrackedLink from '../components/TrackedLink'
 
 
 export default class Home extends React.Component {

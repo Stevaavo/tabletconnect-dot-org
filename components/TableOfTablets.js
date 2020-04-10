@@ -1,3 +1,8 @@
+
+
+import TrackedLink from '../components/TrackedLink'
+
+
 const tableOfTablets = <div className="columns is-centered">
     <div className="column is-narrow">
         <table className="table">
