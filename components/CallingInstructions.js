@@ -2,8 +2,9 @@ import React from 'react'
 import '../styles/styles.scss'
 import config from '../config'
 // import Link from 'next/link'
-import BuyTabletInstructions from './BuyTabletInstructions'
-import TableOfTablets from './TableOfTablets'
+// import BuyTabletInstructions from './BuyTabletInstructions'
+// import TableOfTablets from './TableOfTablets'
+import TrackedLink from '../components/TrackedLink'
 
 
 export default class Home extends React.Component {
@@ -93,7 +94,7 @@ export default class Home extends React.Component {
 
                             <p>
                                 The video below will walk you through this process.  You can also share this video with your relatives, to show them how they can call your 
-                                parent/grandparent as well.  Here is a direct link to the video: <a href="https://youtu.be/2-_5YfV9DDw">https://youtu.be/2-_5YfV9DDw</a>
+                                parent/grandparent as well.  Here is a direct link to the video: <TrackedLink href="https://youtu.be/2-_5YfV9DDw">https://youtu.be/2-_5YfV9DDw</TrackedLink>
                             </p>
 
                         </div>

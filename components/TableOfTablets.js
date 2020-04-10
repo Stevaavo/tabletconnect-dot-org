@@ -17,9 +17,9 @@ const tableOfTablets = <div className="columns is-centered">
                     </td>
 
                     <td>
-                        <a href="https://www.verizonwireless.com/tablets/samsung-galaxy-tab-a/">
+                        <TrackedLink href="https://www.verizonwireless.com/tablets/samsung-galaxy-tab-a/">
                             Samsung Galaxy Tab A - 8.0 inch
-                        </a>
+                        </TrackedLink>
                     </td>
                     <td>$200</td>
                     <td>$250</td>
@@ -28,9 +28,9 @@ const tableOfTablets = <div className="columns is-centered">
                 <tr>
                     {/* <td rowSpan={2}>Verizon</td> */}
                     <td>
-                        <a href="https://www.verizonwireless.com/tablets/samsung-galaxy-tab-a-8-4/?sku=sku3770101">
+                        <TrackedLink href="https://www.verizonwireless.com/tablets/samsung-galaxy-tab-a-8-4/?sku=sku3770101">
                             Samsung Galaxy Tab A - 8.4 inch
-                        </a>
+                        </TrackedLink>
                     </td>
 
                     <td>$230</td>
@@ -47,9 +47,9 @@ const tableOfTablets = <div className="columns is-centered">
                     </td>
 
                     <td>
-                        <a href="https://www.att.com/buy/tablets/samsung-galaxy-tab-a-32gb-black-refurbished.html">
+                        <TrackedLink href="https://www.att.com/buy/tablets/samsung-galaxy-tab-a-32gb-black-refurbished.html">
                             Samsung Galaxy Tab A - 8.0" - Refurb
-                        </a>
+                        </TrackedLink>
                     </td>
                     <td>$187</td>
                     <td>$187</td>
@@ -58,9 +58,9 @@ const tableOfTablets = <div className="columns is-centered">
                 <tr>
                     {/* <td rowSpan={2}>Verizon</td> */}
                     <td>
-                        <a href="https://www.att.com/buy/tablets/samsung-galaxy-tab-s5e-64gb-black.html">
+                        <TrackedLink href="https://www.att.com/buy/tablets/samsung-galaxy-tab-s5e-64gb-black.html">
                             Samsung Galaxy Tab S5e
-                        </a>
+                        </TrackedLink>
                     </td>
 
                     <td>$480</td>
@@ -77,9 +77,9 @@ const tableOfTablets = <div className="columns is-centered">
                     </td>
 
                     <td>
-                        <a href="https://www.t-mobile.com/tablet/alcatel-joy-tab?sku=610214661333">
+                        <TrackedLink href="https://www.t-mobile.com/tablet/alcatel-joy-tab?sku=610214661333">
                             Alcatel Joy Tab
-                        </a>
+                        </TrackedLink>
                     </td>
                     <td>$168</td>
                     <td>$168</td>
@@ -88,9 +88,9 @@ const tableOfTablets = <div className="columns is-centered">
                 <tr>
                     {/* <td rowSpan={2}>Verizon</td> */}
                     <td>
-                        <a href="https://www.t-mobile.com/tablet/samsung-galaxy-tab-a-8-4?sku=610214704696">
+                        <TrackedLink href="https://www.t-mobile.com/tablet/samsung-galaxy-tab-a-8-4?sku=610214704696">
                             Samsung Galaxy Tab A - 8.4 inch
-                        </a>
+                        </TrackedLink>
                     </td>
 
                     <td>$264</td>
@@ -107,9 +107,9 @@ const tableOfTablets = <div className="columns is-centered">
                     </td>
 
                     <td>
-                        <a href="https://www.sprint.com/en/shop/tablets/samsung-galaxy-tab-a-101.html">
+                        <TrackedLink href="https://www.sprint.com/en/shop/tablets/samsung-galaxy-tab-a-101.html">
                             Samsung Galaxy Tab A - 10.1 inch
-                        </a>
+                        </TrackedLink>
                     </td>
                     <td>$0</td>
                     <td>$339</td>
@@ -124,9 +124,9 @@ const tableOfTablets = <div className="columns is-centered">
                     </td>
 
                     <td>
-                        {/* <a > */}
+                        {/* <TrackedLink > */}
                             Samsung Galaxy Tab A - Any Size
-                        {/* </a> */}
+                        {/* </TrackedLink> */}
                     </td>
                     <td>n/a</td>
                     <td>n/a</td>

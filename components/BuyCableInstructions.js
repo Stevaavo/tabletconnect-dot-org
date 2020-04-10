@@ -58,13 +58,13 @@ export default class Home extends React.Component {
 
         
         <p>
-            If you're going with a Samsung Galaxy Tab A 8", or an Alcatel Joy Tab, I recommend <a href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 
-            25-foot microUSB cable</a> that I bought for my grandmother.  It's definitely overkill, but it will get the job done.
+            If you're going with a Samsung Galaxy Tab A 8", or an Alcatel Joy Tab, I recommend <TrackedLink href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 
+            25-foot microUSB cable</TrackedLink> that I bought for my grandmother.  It's definitely overkill, but it will get the job done.
         </p>
 
         <p>
             Other tablets (such as the Samsung Galaxy Tab A 8.4") may require a different cable type called "USB-C."  I haven't tested any extra-long USB-C cables, 
-            but <a href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot cable</a> comes from a good brand.
+            but <TrackedLink href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot cable</TrackedLink> comes from a good brand.
         </p>
 
         <p>
@@ -88,13 +88,13 @@ export default class Home extends React.Component {
         
         <p>
             If you're going with the 2019 Samsung Galaxy Tab A 8" that I recommended above, it uses a microUSB charging port.  
-            I recommend <a href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 25-foot microUSB cable</a> that I bought for my grandmother.  
+            I recommend <TrackedLink href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 25-foot microUSB cable</TrackedLink> that I bought for my grandmother.  
             It's definitely overkill, but it will get the job done.
         </p>
 
         <p>
             Other tablets, or more recent versions of the Galaxy Tab A, might have a USB-C type charging port.  I haven't tested any extra-long USB-C cables, 
-            but <a href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot cable</a> comes from a good brand.
+            but <TrackedLink href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot cable</TrackedLink> comes from a good brand.
         </p>
 
     </div>

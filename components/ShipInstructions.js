@@ -2,8 +2,7 @@ import React from 'react'
 import '../styles/styles.scss'
 import config from '../config'
 // import Link from 'next/link'
-import BuyTabletInstructions from './BuyTabletInstructions'
-import TableOfTablets from './TableOfTablets'
+import TrackedLink from '../components/TrackedLink'
 
 
 export default class Home extends React.Component {
@@ -71,7 +70,7 @@ export default class Home extends React.Component {
 
                     <p>
                         I would also suggest <strong className="highlight">disinfecting</strong> the tablet before you ship it, since coronavirus can survive for a long time on glass and plastic surfaces.  You can
-                        find a guide to disinfecting tablets and smartphones <a href="https://thewirecutter.com/blog/disinfect-your-phone-coronavirus/">here</a>.
+                        find a guide to disinfecting tablets and smartphones <TrackedLink href="https://thewirecutter.com/blog/disinfect-your-phone-coronavirus/">here</TrackedLink>.
                     </p>
 
                 </div>
