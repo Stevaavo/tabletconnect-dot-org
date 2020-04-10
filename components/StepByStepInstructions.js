@@ -45,6 +45,8 @@ export default class Home extends React.Component {
         }
     });
 
+    logEvent(name, (!falseButton).toString() )
+
     setTimeout( () => {
   
         this.setState( () => {

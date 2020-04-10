@@ -6,6 +6,8 @@ import Header from '../components/Header'
 // import Nav from '../components/nav'
 // import user from '../utils/user'
 import Footer from '../components/Footer'
+import { initGA, logPageView } from '../utils/analytics'
+
 
 // import RegisterOrLoginBox from '../components/tabs/RegisterOrLoginBox'
 
@@ -20,6 +22,15 @@ export default class Home extends React.Component {
       return {
           query: contextObject.query
       }
+  }
+
+
+  componentDidMount () {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
   }
 
 

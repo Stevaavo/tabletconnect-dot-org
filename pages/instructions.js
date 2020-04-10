@@ -4,6 +4,8 @@ import '../styles/styles.scss'
 import Header from '../components/Header'
 import StepByStepInstructions from '../components/StepByStepInstructions'
 import Footer from '../components/Footer'
+import { initGA, logPageView, logEvent } from '../utils/analytics'
+
 
 
 export default class Home extends React.Component {
@@ -40,6 +42,8 @@ export default class Home extends React.Component {
         }
     });
 
+    logEvent(name, (!falseButton).toString() )
+
     setTimeout( () => {
   
         this.setState( () => {
@@ -51,6 +55,15 @@ export default class Home extends React.Component {
 
     }, 50)
 
+  }
+
+
+  componentDidMount () {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
   }
 
 
