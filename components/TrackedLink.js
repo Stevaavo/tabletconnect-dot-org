@@ -5,7 +5,7 @@ import ReactGA from 'react-ga'
 const component = (props) => {
 
     return <ReactGA.OutboundLink
-        eventLabel={props.target || "linkClick"}
+        eventLabel={props.eventLabel || props.href}
         to={props.href}
         target={props.target || "_blank"}
         >

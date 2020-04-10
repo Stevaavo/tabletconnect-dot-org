@@ -111,8 +111,8 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        Alternatively, you can buy an inexpensive Android tablet.  I recommend the 
-                        <a href="https://www.bestbuy.com/site/samsung-galaxy-tab-a-latest-model-8-32gb-black/6368084.p?skuId=6368084">Samsung Galaxy Tab A - Wifi Version</a>, 
+                        Alternatively, you can buy an inexpensive Android tablet.  I recommend 
+                        the <TrackedLink href="https://www.bestbuy.com/site/samsung-galaxy-tab-a-latest-model-8-32gb-black/6368084.p?skuId=6368084" >Samsung Galaxy Tab A - Wifi Version</TrackedLink>, 
                         which costs $149.
                     </p>
 
