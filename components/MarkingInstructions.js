@@ -55,7 +55,7 @@ export default class Home extends React.Component {
         <section className="section">
             <div className="container">
 
-                <h1 className="title">Part 6: Mark the Buttons</h1>
+                <h1 className="title">Part {this.props.stepNumber}: Mark the Buttons</h1>
 
                 <div className="columns is-vcentered">
 

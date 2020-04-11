@@ -3,6 +3,7 @@ import '../styles/styles.scss'
 // import Link from 'next/link'
 import Encouragement from '../components/Encouragement'
 import BuyTabletInstructions from '../components/BuyTabletInstructions'
+import BuyTabletInstructionsSuperior from '../components/BuyTabletInstructionsSuperior'
 import BuyCableInstructions from '../components/BuyCableInstructions'
 import SetupInstructions from '../components/SetupInstructions'
 import TestCallInstructions from './CallingInstructions'
@@ -10,6 +11,7 @@ import MarkingInstructions from '../components/MarkingInstructions'
 import ShipInstructions from '../components/ShipInstructions'
 import OnboardInstructions from '../components/OnboardInstructions'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
+import scrollToComponent from 'react-scroll-to-component'
 
 
 
@@ -59,41 +61,51 @@ export default class Home extends React.Component {
         });
 
     }, 50)
+  
+    scrollToComponent(this.wifiOrCellQuestion, { offset: 0, align: 'top', duration: 1000})
+   
 
   }
 
 
   render() {
 
+    let stepNumber = 2
+
     const remainingInstructions = <div className={`${this.state.fadeOut ? "animated fadeOut" : "animated fadeIn" }`}>
 
         <Encouragement />
 
-        <BuyTabletInstructions
+        <BuyTabletInstructionsSuperior
             techSavvy={this.props.techSavvy} 
             cellular={this.state.cellular}  
+            stepNumber={stepNumber++}
         />
         
-        <BuyCableInstructions
+        {/* <BuyCableInstructions
             techSavvy={this.props.techSavvy} 
-        />
+        /> */}
 
         <SetupInstructions  
             techSavvy={this.props.techSavvy} 
             cellular={this.state.cellular} 
+            stepNumber={stepNumber++}
         />
 
         <TestCallInstructions
             techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
 
         />
 
         <MarkingInstructions
             techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
         />
 
         <ShipInstructions  
             techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
         />
 
         <OnboardInstructions  
@@ -106,32 +118,45 @@ export default class Home extends React.Component {
     // previousCellVsWifiState = this.state.cellular
 
 
-    const notSavvyText = <div>
+    const text = <div>
         <h1 className="title">Part 1: Cellular vs. Wifi</h1>
 
         <div className="content">
 
             <p>
                 I recommend getting a tablet with a 4G cellular connection.  
-                That way, the tablet will work immediately “out of the box.”  
-                Your parent/grandparent won’t need to connect the tablet to a Wifi network.
+                You'll need to pay a monthly cost of <strong className="highlight">between $10 and $30</strong> for a cellular plan for the tablet, but it will bring several advantages:
             </p>
 
-            <p>
-                It will also remain connected if your parent/grandparent travels domestically, moves, or in the unfortunate event that they need to visit a hospital.
-            </p>
 
-            <p>
-                The most affordable way to set up a tablet with a cellular connection is probably by adding it to your existing cell phone plan. 
-                If you call your carrier and ask them to add a tablet to your phone plan (see next section), they will usually let you do that 
-                for an additional fee of $10 to $25 per month.
-            </p>
+            {/* <p className="title is-size-6">Advantages of a Cellular Connection</p> */}
 
-            <p>
+            <ul>
+                <li>
+                    No setup needed - the tablet will work "out of the box"
+                </li>
+
+                <li>
+                    No Wifi network required
+                </li>
+
+                <li>
+                    The tablet will stay connected if your parent/grandparent travels domestically
+                </li>
+
+                <li>
+                    The tablet will stay connected if your parent/grandparent brings it to a hospital or rehab facility
+                </li>
+
+            </ul>
+
+
+
+            {!this.props.techSavvy && <p>
                 On the other hand, if your parent/grandparent has Wifi where they are located, you could avoid paying a monthly cellular service fee by 
                 going with a Wifi-only tablet.  However, bear in mind that it might be difficult for your parent/grandparent to go about connecting the 
                 tablet to their Wifi network.  You might need to ask a nurse or an aide to set up the connection for them.
-            </p>
+            </p>}
 
         </div>
 
@@ -181,11 +206,11 @@ export default class Home extends React.Component {
 
                 {/* {this.props.techSavvy ? savvyText : notSavvyText } */}
 
-                {notSavvyText}
+                {text}
 
                 <br />
 
-                <p className="title is-size-5 has-text-centered">Would you like to set up this tablet with a cellular connection, or a Wifi connection?</p> 
+                <p className="title is-size-5 has-text-centered" ref={(p) => { this.wifiOrCellQuestion = p; }} >Would you like to set up this tablet with a cellular connection, or a Wifi connection?</p> 
 
                 <div className="columns is-centered">
                     <div className="column is-one-third has-text-centered">

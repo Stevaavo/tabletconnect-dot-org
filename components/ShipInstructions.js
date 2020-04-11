@@ -54,7 +54,7 @@ export default class Home extends React.Component {
         <section className="section">
             <div className="container">
 
-                <h1 className="title">Part 7: Give it!</h1>
+                <h1 className="title">Part {this.props.stepNumber}: Give it!</h1>
 
                 <div className="content">
 

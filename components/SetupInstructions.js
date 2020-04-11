@@ -53,7 +53,7 @@ export default class Home extends React.Component {
         <section className="section">
             <div className="container">
 
-                <h1 className="title">Part 4: Set Up the Tablet</h1>
+                <h1 className="title">Part {this.props.stepNumber}: Set Up the Tablet</h1>
 
                 <div className="content">
 
@@ -149,7 +149,7 @@ export default class Home extends React.Component {
         <section className="section">
             <div className="container">
 
-                <h1 className="title">Part 4: Set Up the Tablet</h1>
+                <h1 className="title">Part {this.props.stepNumber}: Set Up the Tablet</h1>
 
                 <div className="content">
 

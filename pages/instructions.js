@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import StepByStepInstructions from '../components/StepByStepInstructions'
 import Footer from '../components/Footer'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
+import scrollToComponent from 'react-scroll-to-component'
 
 
 
@@ -54,6 +55,8 @@ export default class Home extends React.Component {
         });
 
     }, 50)
+  
+    scrollToComponent(this.question, { offset: 0, align: 'top', duration: 1000})
 
   }
 
@@ -74,7 +77,7 @@ export default class Home extends React.Component {
         <div className={`${ typeof this.state.techSavvy == "undefined"  && "hero-body"}`}>
             <div className="container has-text-centered">
 
-                <h1 className="title">Would you consider yourself moderately "tech-savvy"?</h1>
+                <h1 className="title" ref={(thisComponent) => { this.question = thisComponent; }} >Would you consider yourself moderately "tech-savvy"?</h1>
 
                 <br />
 
