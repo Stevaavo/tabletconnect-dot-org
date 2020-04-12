@@ -64,11 +64,17 @@ export default class Home extends React.Component {
         this.props.tabletChosen()
     }
 
+    const dataExplanation = <p>
+        Your plan might already include unlimited data for the tablet.  Or, you might be asked to choose a plan for the tablet with a limited amount of monthly data.
+        If you need to choose how much data to buy for the tablet, a good rule of thumb is that every gigabyte (GB) of "LTE" data works out 
+        to roughly 1 hour and 15 minutes of talk-time over video chat.
+    </p>
+
 
     const microUsbCableRecommendation = <div>
         <p>
-            The tablet will come with a charging cable that is about 4 feet long.  That's enough for most cases, but you might want to buy an extra-long cable, so that the 
-            device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.
+            The tablet will come with a charging cable that is about 4 feet long.  Depending on your relative/friend's needs, you might want to buy an extra-long cable, so that the 
+            device can charge in whatever spot would be most convenient for them to see/hear/reach it.
         </p>
 
         <p>
@@ -80,8 +86,8 @@ export default class Home extends React.Component {
     
     const usbCCableRecommendation = <div>
         <p>
-            The tablet will come with a charging cable that is about 4 feet long.  That's enough for most cases, but you might want to buy an extra-long cable, so that the 
-            device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.
+            The tablet will come with a charging cable that is about 4 feet long.  Depending on your relative/friend's needs, you might want to buy an extra-long cable, so that the 
+            device can charge in whatever spot would be most convenient for them to see/hear/reach it.
         </p>
 
         <p>
@@ -92,8 +98,8 @@ export default class Home extends React.Component {
     
     const unknownCableRecommendation = <div>
         <p>
-            I also suggest that you buy an extra-long charging cable, so that the 
-            device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.
+            Most tablets will come with a charging cable that is about 4 feet long.  Depending on your relative/friend's needs, you might want to buy an extra-long cable, so that the 
+            device can charge in whatever spot would be most convenient for them to see/hear/reach it.
         </p>
 
         {this.state.USA && <p>
@@ -107,7 +113,7 @@ export default class Home extends React.Component {
 
 
 
-    const gsmCarrier = <div className="animated fadeIn">
+    const att = <div className="animated fadeIn">
 
         <br />
         <br />
@@ -123,13 +129,19 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        Then, call {this.state.carrier} and tell them you want to add a tablet to your cell phone plan.  
+                        After the tablet arrives, call {this.state.carrier} and tell them you want to add a tablet to your cell phone plan.  
                         Ask them to send you a SIM card for it.  When you get the SIM card in the mail, insert it into the tablet, and you’re good to go!
                     </p>
 
                     <p>
                         This video will show you how to insert the SIM card: <TrackedLink href="https://youtu.be/WUhfYauKDTY">https://youtu.be/WUhfYauKDTY</TrackedLink>
                     </p>
+
+                    <p>
+                        {this.state.carrier} will usually charge $20 extra per month to add a tablet to your phone plan.
+                    </p>
+
+                    {dataExplanation}
 
                     {microUsbCableRecommendation}
 
@@ -144,6 +156,59 @@ export default class Home extends React.Component {
 
                         <figure class="image">
                             <img src="/static/tabA4gHalfsize.jpg" />
+                        </figure>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    const tmobile = <div className="animated fadeIn">
+
+        <br />
+        <br />
+        <br />
+
+        <div className = "columns is-vcentered">
+
+            <div className="column">
+
+                <div className="content">
+                    <p>
+                        I recommend buying <TrackedLink href="https://www.t-mobile.com/tablet/alcatel-joy-tab?sku=610214661333">this tablet</TrackedLink> from {this.state.carrier}.
+                    </p>
+
+                    <p>
+                        You can buy it and add it to your phone service plan through their website at the link above, or you can call them to arrange the purchase. 
+                        When the tablet arrives, it will already be connected to your {this.state.carrier} plan "out of the box."
+                    </p>
+
+                    <p>
+                        In most cases, {this.state.carrier} will charge between $15 and $35 extra per month to add a tablet to your phone plan.
+                    </p>
+
+                    {dataExplanation}
+
+                    {microUsbCableRecommendation}
+
+                </div>
+
+            </div>
+
+            <div className="column is-one-third">
+                <div className="columns is-centered">
+
+                    <div className="column is-half">
+
+                        <figure class="image">
+                            <img src="/static/joytab.jpg" />
                         </figure>
 
                     </div>
@@ -178,6 +243,8 @@ export default class Home extends React.Component {
                     <p>
                         In most cases, {this.state.carrier} will charge $10/month to add a tablet to your phone plan.
                     </p>
+
+                    {dataExplanation}
 
                     {usbCCableRecommendation}
 
@@ -225,8 +292,10 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        In most cases, {this.state.carrier} will charge between $15 and $30 per month to add a tablet to your phone plan wth "unlimited" data.
+                        In most cases, {this.state.carrier} will charge between $15 and $30 per month to add a tablet to your phone plan.
                     </p>
+
+                    {dataExplanation}
 
                     {usbCCableRecommendation}
 
@@ -272,6 +341,8 @@ export default class Home extends React.Component {
                         If you're not sure what to choose, or if your carrier doesn't sell tablets, feel free to shoot us an email at <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink>.  
                         Tell us which carrier you are using, and we'll find a good option for you.
                     </p>
+
+                    {dataExplanation}
 
                     {unknownCableRecommendation}
 
@@ -342,8 +413,8 @@ export default class Home extends React.Component {
 
 
 
-        {(this.state.carrier == "T-Mobile") && gsmCarrier}
-        {(this.state.carrier == "AT&T") && gsmCarrier}
+        {(this.state.carrier == "T-Mobile") && tmobile}
+        {(this.state.carrier == "AT&T") && att}
         {(this.state.carrier == "Verizon") && verizon}
         {(this.state.carrier == "Sprint") && sprint}
         {(this.state.carrier == "other") && otherCarrier}
