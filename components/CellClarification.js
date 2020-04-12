@@ -63,26 +63,26 @@ export default class Home extends React.Component {
 
     const microUsbCableRecommendation = <div>
         <p>
-            I also suggest that you buy an extra-long charging cable, so that the 
+            The tablet will come with a charging cable that is about 4 feet long.  That's enough for most cases, but you might want to buy an extra-long cable, so that the 
             device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.
         </p>
 
         <p>
             I recommend <TrackedLink href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 
             25-foot microUSB cable</TrackedLink> that I bought for my grandmother.  It's definitely overkill, but it will get the job done. 
-            Just make sure it doesn't get positioned somewhere that it might pose a tripping hazard.
+            Just <strong className="highlight">make sure it doesn't get positioned somewhere that it might pose a tripping hazard.</strong>
         </p>
     </div>
     
     const usbCCableRecommendation = <div>
         <p>
-            I also suggest that you buy an extra-long charging cable, so that the 
+            The tablet will come with a charging cable that is about 4 feet long.  That's enough for most cases, but you might want to buy an extra-long cable, so that the 
             device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.
         </p>
 
         <p>
             I recommend <TrackedLink href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot USB-C cable</TrackedLink>.
-            Just make sure it doesn't get positioned somewhere that it might pose a tripping hazard.
+            Just <strong className="highlight">make sure it doesn't get positioned somewhere that it might pose a tripping hazard.</strong>
         </p>
     </div>
     
@@ -121,6 +121,10 @@ export default class Home extends React.Component {
                     <p>
                         Then, call {this.state.carrier} and tell them you want to add a tablet to your cell phone plan.  
                         Ask them to send you a SIM card for it.  When you get the SIM card in the mail, insert it into the tablet, and you’re good to go!
+                    </p>
+
+                    <p>
+                        This video will show you how to insert the SIM card: <TrackedLink href="https://youtu.be/WUhfYauKDTY">https://youtu.be/WUhfYauKDTY</TrackedLink>
                     </p>
 
                     {microUsbCableRecommendation}

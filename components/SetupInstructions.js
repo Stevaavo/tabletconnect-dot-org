@@ -123,6 +123,11 @@ export default class Home extends React.Component {
                         <li>You're all set!</li>
                     </ol>
 
+                    
+                    <p>
+                        Congrats!  You have finished setup, and the tablet is now ready to be tested!
+                    </p>
+
                 </div>
 
 
@@ -214,6 +219,11 @@ export default class Home extends React.Component {
                         <li>You're all set!</li>
                     </ol>
 
+                    
+                    <p>
+                        Congrats!  You have finished setup, and the tablet is now ready to be tested!
+                    </p>
+
                 </div>
 
 
@@ -231,6 +241,7 @@ export default class Home extends React.Component {
 
     return <div>
         {this.props.techSavvy ? savvyText : notSavvyText}
+
     </div>
 
   }

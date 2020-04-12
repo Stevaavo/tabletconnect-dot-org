@@ -93,6 +93,10 @@ export default class Home extends React.Component {
                             </p>
 
                             <p>
+                                During the test call, you may want to <strong className="highlight">adjust the tablet's volume</strong> up or down to the level that you think your relative/friend would prefer.
+                            </p>
+
+                            <p>
                                 The video below will walk you through this process.  You can also share this video with others, to show them how they can call your 
                                 relative/friend as well.  Here is a direct link to the video: <TrackedLink href="https://youtu.be/2-_5YfV9DDw">https://youtu.be/2-_5YfV9DDw</TrackedLink>
                             </p>

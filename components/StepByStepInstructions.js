@@ -134,7 +134,7 @@ export default class Home extends React.Component {
         <div className="content">
 
             <p>
-                I recommend getting a tablet with a 4G cellular connection.  
+                The tablet can connect to the internet over Wifi, or over a 4G cellular connection, but <strong className="highlight">I recommend 4G</strong>.  
                 You'll need to pay a monthly cost of <strong className="highlight">between $10 and $30</strong> for a cellular plan for the tablet, but it will bring several advantages:
             </p>
 

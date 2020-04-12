@@ -149,7 +149,7 @@ export default class Home extends React.Component {
 
                 <br />
 
-                <Link  href="/support">
+                <Link  href="/volunteer">
                   <button className="button is-fullwidth is-info">
                     {/* <span className="icon">
                         <i className="fas fa-hands-helping"></i>
