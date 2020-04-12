@@ -81,7 +81,7 @@ export default class Header extends React.Component {
 
                                 <div className="navbar-item">
                                     <Link href="/contact">
-                                        <a class="navbar-item">
+                                        <a className="navbar-item">
                                             Contact
                                         </a>
                                     </Link>

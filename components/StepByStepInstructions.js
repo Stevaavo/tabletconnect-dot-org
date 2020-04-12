@@ -12,7 +12,7 @@ import ShipInstructions from '../components/ShipInstructions'
 import OnboardInstructions from '../components/OnboardInstructions'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
 // import scrollToComponent from 'react-scroll-to-component'
-import scrollToComponent from 'ssr-scroll-to'
+// import scrollToComponent from 'ssr-scroll-to'
 
 // var scrollToComponent
 
@@ -63,7 +63,7 @@ export default class Home extends React.Component {
 
     }, 50)
   
-    scrollToComponent(this.wifiOrCellQuestion, { offset: 0, align: 'top', duration: 1000})
+    // scrollToComponent(this.wifiOrCellQuestion, { offset: 0, align: 'top', duration: 1000})
    
 
   }
