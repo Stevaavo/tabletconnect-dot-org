@@ -100,14 +100,25 @@ export default class Home extends React.Component {
                 many senior citizens don't have a phone or computer, or the technical skill to use one for a video call.</p> */}
 
                 <p className="subtitle is-size-6-mobile">
-                  This guide will show you how to buy and set up a dedicated Skype tablet that you can mail to a loved one.
-                  I originally set up a tablet like this for my grandmother, who has been cut off from visitors due to the coronavirus crisis.
+                  Hello!
                 </p>
-                <p className="subtitle is-size-6-mobile">The tablet will <strong className="highlight">automatically pick up your video calls</strong>, so your friend/relative doesn't 
-                need to learn how to use it.  They just need to keep it somewhere they can see or hear you when you call.</p>
+
+                <p className="subtitle is-size-6-mobile">
+                  This guide will show you how to buy and set up a <strong className="highlight">dedicated Skype tablet</strong> that you can mail to a loved one.
+                </p>
+
+                <p className="subtitle is-size-6-mobile">
+                  I originally set up a tablet like this for my grandmother, who has been cut off from visitors due to the coronavirus crisis. 
+                  It's worked very well for her, so I've written this guide on a volunteer basis to help others do the same.
+                </p>
+                <p className="subtitle is-size-6-mobile">
+                  The tablet will <strong className="highlight">automatically pick up video calls</strong> from 
+                  you <strong className="highlight">and others</strong>, so your friend/relative doesn't 
+                  need to learn how to use it.  They just need to keep it plugged into its charger.
+                </p>
                 <p className="subtitle is-size-6-mobile">The tablet will connect to the internet through the cellular network, so <strong className="highlight">no wifi is required</strong>.</p>
                 {/* <p className="subtitle is-size-6-mobile"></p> */}
-                <p className="subtitle is-size-6-mobile">You can give the person's Skype name to other friends and relatives, so that they can video-call the tablet as well.</p>
+                {/* <p className="subtitle is-size-6-mobile">You can give the person's Skype name to other friends and relatives, so that they can video-call the tablet as well.</p> */}
                 {/* <p className="subtitle is-size-6-mobile">I originally set up a tablet like this for my grandmother, who has been cut off from visitors for several weeks now
                 due to the crisis.</p> */}
 
@@ -132,6 +143,19 @@ export default class Home extends React.Component {
                     </span>
                     <span>
                       Get Help from a Volunteer
+                    </span>
+                  </button>
+                </Link>
+
+                <br />
+
+                <Link  href="/support">
+                  <button className="button is-fullwidth is-info">
+                    {/* <span className="icon">
+                        <i className="fas fa-hands-helping"></i>
+                    </span> */}
+                    <span>
+                      😇 Volunteer to Give Tech Support to Others
                     </span>
                   </button>
                 </Link>
