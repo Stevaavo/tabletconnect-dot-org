@@ -100,11 +100,7 @@ export default class Home extends React.Component {
                 many senior citizens don't have a phone or computer, or the technical skill to use one for a video call.</p> */}
 
                 <p className="subtitle is-size-6-mobile">
-                  Hello!
-                </p>
-
-                <p className="subtitle is-size-6-mobile">
-                  This guide will show you how to buy and set up a <strong className="highlight">dedicated Skype tablet</strong> that you can mail to a loved one.
+                  This guide will walk you through how to buy and set up a dedicated <strong className="highlight">video-chat tablet</strong> that you can mail to a loved one.
                 </p>
 
                 <p className="subtitle is-size-6-mobile">
@@ -112,9 +108,10 @@ export default class Home extends React.Component {
                   It's worked very well for her, so I've written this guide on a volunteer basis to help others do the same.
                 </p>
                 <p className="subtitle is-size-6-mobile">
-                  The tablet will <strong className="highlight">automatically pick up video calls</strong> from 
-                  you <strong className="highlight">and others</strong>, so your friend/relative doesn't 
-                  need to learn how to use it.  They just need to keep it plugged into its charger.
+                  The tablet will <strong className="highlight">automatically pick up Skype video calls</strong> from 
+                  you <strong className="highlight">and other family</strong>, so your friend/relative doesn't 
+                  need to learn how to use it. 
+                  They just need to keep it somewhere they can see or hear you when you call.
                 </p>
                 <p className="subtitle is-size-6-mobile">The tablet will connect to the internet through the cellular network, so <strong className="highlight">no wifi is required</strong>.</p>
                 {/* <p className="subtitle is-size-6-mobile"></p> */}

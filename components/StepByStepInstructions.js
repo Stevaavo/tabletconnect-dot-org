@@ -74,7 +74,15 @@ export default class Home extends React.Component {
     // scrollToComponent = require('react-scroll-to-component')
     // scrollToComponent = require('ssr-scroll-to')
 
-    
+  }
+
+  tabletChosen = () => {
+
+    if (!this.state.tabletChosen) {
+      this.setState({
+          tabletChosen: true
+      })
+    }
   }
 
 
@@ -82,7 +90,7 @@ export default class Home extends React.Component {
 
     let stepNumber = 2
 
-    const remainingInstructions = <div className={`${this.state.fadeOut ? "animated fadeOut" : "animated fadeIn" }`}>
+    const buyInstructions = <div className={`${this.state.fadeOut ? "animated fadeOut" : "animated fadeIn" }`}>
 
         <Encouragement />
 
@@ -90,11 +98,18 @@ export default class Home extends React.Component {
             techSavvy={this.props.techSavvy} 
             cellular={this.state.cellular}  
             stepNumber={stepNumber++}
+            tabletChosen={this.tabletChosen}
         />
         
         {/* <BuyCableInstructions
             techSavvy={this.props.techSavvy} 
         /> */}
+
+        
+
+    </div>
+
+    const remainingInstructions = <div>
 
         <SetupInstructions  
             techSavvy={this.props.techSavvy} 
@@ -134,7 +149,7 @@ export default class Home extends React.Component {
         <div className="content">
 
             <p>
-                The tablet can connect to the internet over Wifi, or over a 4G cellular connection, but <strong className="highlight">I recommend 4G</strong>.  
+                The tablet can connect to the internet over Wifi or over a 4G cellular connection, but <strong className="highlight">I recommend 4G cellular</strong>.  
                 You'll need to pay a monthly cost of <strong className="highlight">between $10 and $30</strong> for a cellular plan for the tablet, but it will bring several advantages:
             </p>
 
@@ -143,7 +158,7 @@ export default class Home extends React.Component {
 
             <ul>
                 <li>
-                    No setup needed - the tablet will work "out of the box"
+                    No setup needed for your relative/friend - the tablet will work "out of the box"
                 </li>
 
                 <li>
@@ -235,7 +250,9 @@ export default class Home extends React.Component {
         </section>
 
 
-        { typeof this.state.cellular != "undefined" && remainingInstructions }
+        { typeof this.state.cellular != "undefined" && buyInstructions }
+
+        {(this.state.tabletChosen || this.state.cellular == false) && remainingInstructions}
 
     </div>
     

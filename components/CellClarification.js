@@ -60,6 +60,10 @@ export default class Home extends React.Component {
 
   render() {
 
+    if (this.state.carrier || this.state.USA == false) {
+        this.props.tabletChosen()
+    }
+
 
     const microUsbCableRecommendation = <div>
         <p>
@@ -168,6 +172,10 @@ export default class Home extends React.Component {
 
                     <p>
                         You can buy it and add it to your phone service plan through their website at the link above, or you can call them to arrange the purchase. 
+                        When the tablet arrives, it will already be connected to your {this.state.carrier} plan "out of the box."
+                    </p>
+
+                    <p>
                         In most cases, {this.state.carrier} will charge $10/month to add a tablet to your phone plan.
                     </p>
 
@@ -212,8 +220,12 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        You can buy it and add it to your phone service plan through their website at the link above, or you can call them to arrange the purchase. 
-                        In most cases, {this.state.carrier} will charge between $15 and $30 per month to add a tablet to your phone plan.
+                        You can buy it and add it to your phone service plan through their website at the link above, or you can call them to arrange the purchase.  
+                        When the tablet arrives, it will already be connected to your {this.state.carrier} plan "out of the box."
+                    </p>
+
+                    <p>
+                        In most cases, {this.state.carrier} will charge between $15 and $30 per month to add a tablet to your phone plan wth "unlimited" data.
                     </p>
 
                     {usbCCableRecommendation}

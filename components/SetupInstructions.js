@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/styles.scss'
 // import Link from 'next/link'
 import config from '../config'
+import TrackedLink from '../components/TrackedLink'
 
 
 export default class Home extends React.Component {
@@ -67,7 +68,8 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        Now, let’s turn on the tablet and get started.  The video below will walk you through initial setup.  Or, refer to the written instructions below.
+                        Now, let’s turn on the tablet and get started.  The video below will walk you through initial setup.  Or, refer to the written summary below.
+                        Make sure to remember the email address and password that you create for your relative/friend in this process.
                     </p>
 
 
@@ -83,6 +85,8 @@ export default class Home extends React.Component {
 
 
                 <p className="title is-size-5">Initial Setup</p>
+
+
                 <div className="content">
 
                     <p>
@@ -90,9 +94,14 @@ export default class Home extends React.Component {
                         the following choices.  You may not be given all of these choices, and they may be offered in a different order.
                     </p>
 
+                    <p className="title is-size-5"><strong className="highlight">These written instructions are a high-level summary. The video above offers a more detailed walkthrough.</strong></p>
+
                     <ul>
                         {this.props.cellular == false && <li>Connect to your home wifi network.</li>}
                         <li>When prompted, create a new Google account for your relative/friend's tablet.  Something like "JaneSmithTablet170@gmail.com"</li>
+                        <ul>
+                            <li>Make sure to remember the Google email address and password that you choose here.</li>
+                        </ul>
                         <li>When asked to set up a PIN or pattern for the tablet, choose “not now.”</li>
                         <li>If it asks you to install updates, go for it.</li>
                         <li>When you’re asked to add a phone number, choose “Skip.”</li>
@@ -112,6 +121,8 @@ export default class Home extends React.Component {
                     <p>
                         Once you've reached the "home screen" and turned on Do Not Disturb mode, it's time to get Skype installed and set up to automatically answer calls:
                     </p>
+
+                    <p className="title is-size-5"><strong className="highlight">These written instructions are a high-level summary. The video above offers a more detailed walkthrough.</strong></p>
 
                     <ol>
                         <li>Go to the Play Store and install Skype.</li>
@@ -177,9 +188,16 @@ export default class Home extends React.Component {
                         the following choices.  You may not be given all of these choices, and they may be offered in a different order.
                     </p>
 
+                    <p>
+                        You can also refer to <TrackedLink href="https://youtu.be/x4vbgYM_2zI">this video</TrackedLink> for a detailed walkthrough of the steps below.
+                    </p>
+
                     <ul>
                         {this.props.cellular == false && <li>Connect to your home wifi network.</li>}
                         <li>When prompted, create a new Google account for your relative/friend's tablet.  Something like "JaneSmithTablet170@gmail.com"</li>
+                        <ul>
+                            <li>Make sure to remember the Google email address and password that you choose here.</li>
+                        </ul>
                         <li>When asked to set up a PIN or pattern for the tablet, choose “not now.”</li>
                         <li>If it asks you to install updates, go for it.</li>
                         <li>When you’re asked to add a phone number, choose “Skip.”</li>

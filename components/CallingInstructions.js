@@ -65,22 +65,28 @@ export default class Home extends React.Component {
                         <div className="content">
 
                             <p>
-                                Restart the tablet.  When it's finished restarting, don't touch it or unlock it.  Instead, try calling it, to see if it picks up your call correctly.
+                                Restart the tablet by holding down the power button for a few seconds, and then tapping "restart" on the screen.  
+                                When it's finished restarting, don't touch it or unlock it.  
+                                Instead we're going to try calling the tablet, to see if it picks up your call correctly.
                             </p>
 
                             <p>
-                                If the call doesn't go through on the first attempt, or if there's a problem with the video, 
-                                try to hang up and call again once or twice.  You can even try again later in the day.  Skype can be a little unpredictable sometimes.
+                                The video below will walk you through the process for making a test call.  Or, you can follow the written summary instructions below the video. 
+                                You can also share the video with others who want to call your friend/relative. 
+                                Here is a direct link to the video: <TrackedLink href="https://youtu.be/2-_5YfV9DDw">https://youtu.be/2-_5YfV9DDw</TrackedLink>
+                            </p>
+
+                            <p>
+                                During the test call, you may want to <strong className="highlight">adjust the tablet's volume</strong> up or down to the level that you think your relative/friend would prefer.
                             </p>
 
                         </div>
 
-
                         <div className="columns is-centered">
                             <div className="column is-half">
-                                <figure class="image">
-                                    <img src="/static/skypeCallExample.png" />
-                                </figure>
+                                <div className="video-container">
+                                    <iframe width={config.youtubeWidth} height={config.youtubeHeight} src="https://www.youtube.com/embed/2-_5YfV9DDw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                </div>
                             </div>
                         </div>
 
@@ -92,13 +98,22 @@ export default class Home extends React.Component {
                                 that you used to sign them up for Skype (in the case of our example, this was JaneSmithTablet170@gmail.com).
                             </p>
 
-                            <p>
-                                During the test call, you may want to <strong className="highlight">adjust the tablet's volume</strong> up or down to the level that you think your relative/friend would prefer.
-                            </p>
+                        </div>
+
+                        
+                        <div className="columns is-centered">
+                            <div className="column is-half">
+                                <figure class="image">
+                                    <img src="/static/skypeCallExample.png" />
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div className="content">
 
                             <p>
-                                The video below will walk you through this process.  You can also share this video with others, to show them how they can call your 
-                                relative/friend as well.  Here is a direct link to the video: <TrackedLink href="https://youtu.be/2-_5YfV9DDw">https://youtu.be/2-_5YfV9DDw</TrackedLink>
+                                If the call doesn't go through on the first attempt, or if there's a problem with the video, 
+                                try to hang up and call again once or twice.  You can even try again later in the day.  Skype can be a little unpredictable sometimes.
                             </p>
 
                         </div>
@@ -109,13 +124,7 @@ export default class Home extends React.Component {
                 </div>
 
 
-                <div className="columns is-centered">
-                    <div className="column is-half">
-                        <div className="video-container">
-                            <iframe width={config.youtubeWidth} height={config.youtubeHeight} src="https://www.youtube.com/embed/2-_5YfV9DDw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                    </div>
-                </div>
+
 
 
             </div>

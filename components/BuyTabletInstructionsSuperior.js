@@ -101,7 +101,7 @@ export default class Home extends React.Component {
                 {this.props.cellular == false && buyWifi}
 
                 
-                {this.props.cellular && <CellClarification techSavvy={this.props.techSavvy} />}
+                {this.props.cellular && <CellClarification techSavvy={this.props.techSavvy} tabletChosen={this.props.tabletChosen} />}
                 {/* {this.props.cellular && !this.props.techSavvy && buyCellNotSavvy} */}
 
 
