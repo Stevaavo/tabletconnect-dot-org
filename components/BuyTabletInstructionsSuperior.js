@@ -59,7 +59,7 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        An old Android phone would probably work too, though it may be a little harder for your parent/grandparent to see you.  If you have a smartphone that 
+                        An old Android phone would probably work too, though it may be a little harder for your relative/friend to see you.  If you have a smartphone that 
                         is not an iPhone, it is probably an Android phone.
                     </p>
 

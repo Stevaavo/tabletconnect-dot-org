@@ -72,7 +72,7 @@ export default class Home extends React.Component {
 
                             <p>
                                 I recommend marking the buttons for <strong className="highlight">"Power,"</strong> <strong className="highlight">"Volume Up"</strong> and <strong className="highlight">"Volume Down"</strong>.  
-                                {/* This might make it easier if you need to help your parent/grandparent troubleshoot an issue with the tablet over the phone. */}
+                                {/* This might make it easier if you need to help your relative/friend troubleshoot an issue with the tablet over the phone. */}
                             </p>
 
                             <p>

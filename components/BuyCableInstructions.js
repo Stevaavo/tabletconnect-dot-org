@@ -49,12 +49,12 @@ export default class Home extends React.Component {
 
         <p>
             The tablet will probably come with a charging cable that is about 4 feet long.  I recommend buying a extra-long cable to use instead, so that the 
-            device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.  This is especially true if the tablet needs
-            to reach the side of a hospital bed.
+            device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.  
+            This is especially true if the tablet needs to reach the side of a hospital bed.
         </p>
 
         <p>
-            Just make sure the tablet isn't placed in a location where the long cable will pose a tripping hazard for your parent/grandparent.
+            Just make sure the tablet isn't placed in a location where the long cable will pose a tripping hazard for your relative/friend.
         </p>
 
         
@@ -79,12 +79,12 @@ export default class Home extends React.Component {
 
         <p>
             The tablet will come with a charging cable that is about 4 feet long.  I recommend buying a extra-long cable to use instead, so that the 
-            device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.  This is especially true if the tablet needs
+            device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.  This is especially true if the tablet needs
             to reach the side of a hospital bed.
         </p>
 
         <p>
-            Just make sure the tablet isn't placed in a location where the long cable will pose a tripping hazard for your parent/grandparent.
+            Just make sure the tablet isn't placed in a location where the long cable will pose a tripping hazard for your relative/friend.
         </p>
         
         <p>

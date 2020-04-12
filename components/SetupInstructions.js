@@ -63,7 +63,7 @@ export default class Home extends React.Component {
 
                     
                     <p>
-                        Consider keeping the shipping box and packing materials so that you can re-use them to mail the tablet to your parent/grandparent when you’re finished.
+                        Consider keeping the shipping box and packing materials so that you can re-use them to mail the tablet to your relative/friend when you’re finished.
                     </p>
 
                     <p>
@@ -92,13 +92,13 @@ export default class Home extends React.Component {
 
                     <ul>
                         {this.props.cellular == false && <li>Connect to your home wifi network.</li>}
-                        <li>When prompted, create a new Google account for your parent/grandparent's tablet.  Something like "JaneSmithTablet170@gmail.com"</li>
+                        <li>When prompted, create a new Google account for your relative/friend's tablet.  Something like "JaneSmithTablet170@gmail.com"</li>
                         <li>When asked to set up a PIN or pattern for the tablet, choose “not now.”</li>
                         <li>If it asks you to install updates, go for it.</li>
                         <li>When you’re asked to add a phone number, choose “Skip.”</li>
-                        <li>If/when asked, don't enable Google Assistant, unless you think your parent/grandparent will enjoy it.</li>
+                        <li>If/when asked, don't enable Google Assistant, unless you think your relative/friend will enjoy it.</li>
                         <li>Accept the other Google services and agreements.</li>
-                        <li>When you finally reach the home screen, turn on "Do Not Disturb" mode so that your parent/grandparent isn't bothered by notification sounds.  This will not
+                        <li>When you finally reach the home screen, turn on "Do Not Disturb" mode so that your relative/friend isn't bothered by notification sounds.  This will not
                         prevent the tablet from picking up your Skype calls.</li>
                     </ul>
 
@@ -115,8 +115,8 @@ export default class Home extends React.Component {
 
                     <ol>
                         <li>Go to the Play Store and install Skype.</li>
-                        <li>Set up a Skype account for your parent/grandparent. When asked to provide a phone number, choose to sign up with an email address instead. Use the Gmail address from the Google account that you just created for the tablet (i.e. JaneSmithTablet170@gmail.com)</li>
-                        <li>Once you're logged in, tap the icon with your parent/grandparent's initials at the top of the screen.  This should bring up a menu where you can choose "settings."</li>
+                        <li>Set up a Skype account for your relative/friend. When asked to provide a phone number, choose to sign up with an email address instead. Use the Gmail address from the Google account that you just created for the tablet (i.e. JaneSmithTablet170@gmail.com)</li>
+                        <li>Once you're logged in, tap the icon with your relative/friend's initials at the top of the screen.  This should bring up a menu where you can choose "settings."</li>
                         <li>Within settings, look for a menu entry labeled "Calling."</li>
                         <li>Within the calling menu, turn on <strong className="highlight">"Answer incoming calls automatically."</strong></li>
                         <li>When you turn that on, a new option should appear called <strong className="highlight">"Start my video automatically."</strong> Turn that on too.</li>
@@ -159,7 +159,7 @@ export default class Home extends React.Component {
 
                     
                     <p>
-                        Consider keeping the shipping box and packing materials so that you can re-use them to mail the tablet to your parent/grandparent when you’re finished.
+                        Consider keeping the shipping box and packing materials so that you can re-use them to mail the tablet to your relative/friend when you’re finished.
                     </p>
 
                 </div>
@@ -174,13 +174,13 @@ export default class Home extends React.Component {
 
                     <ul>
                         {this.props.cellular == false && <li>Connect to your home wifi network.</li>}
-                        <li>When prompted, create a new Google account for your parent/grandparent's tablet.  Something like "JaneSmithTablet170@gmail.com"</li>
+                        <li>When prompted, create a new Google account for your relative/friend's tablet.  Something like "JaneSmithTablet170@gmail.com"</li>
                         <li>When asked to set up a PIN or pattern for the tablet, choose “not now.”</li>
                         <li>If it asks you to install updates, go for it.</li>
                         <li>When you’re asked to add a phone number, choose “Skip.”</li>
-                        <li>If/when asked, don't enable Google Assistant, unless you think your parent/grandparent will enjoy it.</li>
+                        <li>If/when asked, don't enable Google Assistant, unless you think your relative/friend will enjoy it.</li>
                         <li>Accept the other Google services and agreements.</li>
-                        <li>When you finally finish the initial setup and reach the tablet's home screen, turn on "<strong className="highlight">Do Not Disturb</strong>" mode so that your parent/grandparent isn't bothered by notification sounds.  This will not
+                        <li>When you finally finish the initial setup and reach the tablet's home screen, turn on "<strong className="highlight">Do Not Disturb</strong>" mode so that your relative/friend isn't bothered by notification sounds.  This will not
                         prevent the tablet from picking up your Skype calls.</li>
                     </ul>
 
@@ -206,8 +206,8 @@ export default class Home extends React.Component {
 
                     <ol>
                         <li>Go to the Play Store and install Skype.</li>
-                        <li>Set up a Skype account for your parent/grandparent. When asked to provide a phone number, choose to sign up with an email address instead. Use the Gmail address from the Google account that you just created for the tablet (i.e. JaneSmithTablet170@gmail.com)</li>
-                        <li>Once you're logged in, tap the icon with your parent/grandparent's initials at the top of the screen.  This should bring up a menu where you can choose "settings."</li>
+                        <li>Set up a Skype account for your relative/friend. When asked to provide a phone number, choose to sign up with an email address instead. Use the Gmail address from the Google account that you just created for the tablet (i.e. JaneSmithTablet170@gmail.com)</li>
+                        <li>Once you're logged in, tap the icon with your relative/friend's initials at the top of the screen.  This should bring up a menu where you can choose "settings."</li>
                         <li>Within settings, look for a menu entry labeled "Calling."</li>
                         <li>Within the calling menu, turn on <strong className="highlight">"Answer incoming calls automatically."</strong></li>
                         <li>When you turn that on, a new option should appear called <strong className="highlight">"Start my video automatically."</strong> Turn that on too.</li>

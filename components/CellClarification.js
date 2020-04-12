@@ -64,7 +64,7 @@ export default class Home extends React.Component {
     const microUsbCableRecommendation = <div>
         <p>
             I also suggest that you buy an extra-long charging cable, so that the 
-            device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.
+            device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.
         </p>
 
         <p>
@@ -77,7 +77,7 @@ export default class Home extends React.Component {
     const usbCCableRecommendation = <div>
         <p>
             I also suggest that you buy an extra-long charging cable, so that the 
-            device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.
+            device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.
         </p>
 
         <p>
@@ -89,7 +89,7 @@ export default class Home extends React.Component {
     const unknownCableRecommendation = <div>
         <p>
             I also suggest that you buy an extra-long charging cable, so that the 
-            device can charge in whatever spot your parent/grandparent feels would be most convenient for them to see/hear/reach it.
+            device can charge in whatever spot your relative/friend feels would be most convenient for them to see/hear/reach it.
         </p>
 
         {this.state.USA && <p>

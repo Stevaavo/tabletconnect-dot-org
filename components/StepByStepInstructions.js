@@ -148,11 +148,11 @@ export default class Home extends React.Component {
                 </li>
 
                 <li>
-                    The tablet will stay connected if your parent/grandparent travels domestically
+                    The tablet will stay connected if your relative/friend travels domestically
                 </li>
 
                 <li>
-                    The tablet will stay connected if your parent/grandparent brings it to a hospital or rehab facility
+                    The tablet will stay connected if your relative/friend brings it to a hospital or rehab facility
                 </li>
 
             </ul>
@@ -160,8 +160,8 @@ export default class Home extends React.Component {
 
 
             {!this.props.techSavvy && <p>
-                On the other hand, if your parent/grandparent has Wifi where they are located, you could avoid paying a monthly cellular service fee by 
-                going with a Wifi-only tablet.  However, bear in mind that it might be difficult for your parent/grandparent to go about connecting the 
+                On the other hand, if your relative/friend has Wifi where they are located, you could avoid paying a monthly cellular service fee by 
+                going with a Wifi-only tablet.  However, bear in mind that it might be difficult for them to go about connecting the 
                 tablet to their Wifi network.  You might need to ask a nurse or an aide to set up the connection for them.
             </p>}
 
@@ -177,11 +177,11 @@ export default class Home extends React.Component {
 
     //         <p>
     //             I recommend getting a tablet with a 4G cellular connection, instead of relying on Wifi.  That way, the tablet will work "out of the box." 
-    //             Your parent/grandparent won't need to figure out how to connect to Wifi.  Many parents/grandparents also don't have Wifi networks.
+    //             Your relative/friend won't need to figure out how to connect to Wifi.  Many senior citizens also don't have Wifi networks.
     //         </p>
 
     //         <p>
-    //             The tablet will also remain connected if your parent/grandparent brings it with them somewhere.  For example, if they go traveling.  Or, in the unfortunate 
+    //             The tablet will also remain connected if your relative/friend brings it with them somewhere.  For example, if they go traveling.  Or, in the unfortunate 
     //             event that they need to visit a hospital.
     //         </p>
 
@@ -192,7 +192,7 @@ export default class Home extends React.Component {
     //         </p>
 
     //         <p>
-    //             If you decide to go the Wifi route, and if your parent/grandparent has a nurse, social worker, or aide working with them, you might consider asking 
+    //             If you decide to go the Wifi route, and if your relative/friend has a nurse, social worker, or aide working with them, you might consider asking 
     //             them to set up the Wifi connection.
     //         </p>
 

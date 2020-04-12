@@ -88,13 +88,13 @@ export default class Home extends React.Component {
 
                             <p>
                                 To place the call, go into the Skype app on your computer or smartphone (make sure to log in with your own personal Skype account, and not the Skype
-                                account that you created for your parent/grandparent).  Then, look up your parent/grandparent by going to the search box and typing in the email address 
+                                account that you created for your relative/friend).  Then, look up your relative/friend by going to the search box and typing in the email address 
                                 that you used to sign them up for Skype (in the case of our example, this was JaneSmithTablet170@gmail.com).
                             </p>
 
                             <p>
-                                The video below will walk you through this process.  You can also share this video with your relatives, to show them how they can call your 
-                                parent/grandparent as well.  Here is a direct link to the video: <TrackedLink href="https://youtu.be/2-_5YfV9DDw">https://youtu.be/2-_5YfV9DDw</TrackedLink>
+                                The video below will walk you through this process.  You can also share this video with others, to show them how they can call your 
+                                relative/friend as well.  Here is a direct link to the video: <TrackedLink href="https://youtu.be/2-_5YfV9DDw">https://youtu.be/2-_5YfV9DDw</TrackedLink>
                             </p>
 
                         </div>

@@ -54,7 +54,7 @@ export default class Home extends React.Component {
             </p>
 
             <p>
-                Make sure you have the tablet shipped to you, and not to your parent/grandparent.  You’ll want to set it up for them first, and then ship it to them.
+                Make sure you have the tablet shipped to you, and not to your relative/friend.  You’ll want to set it up for them first, and then ship it to them.
             </p>
 
         </div>
@@ -86,7 +86,7 @@ export default class Home extends React.Component {
             </p>
 
             <p>
-                Regardless, make sure you have the tablet shipped to you, and not to your parent/grandparent.  You’ll want to set it up for them first, and then ship it to them.
+                Regardless, make sure you have the tablet shipped to you, and not to your relative/friend.  You’ll want to set it up for them first, and then ship it to them.
             </p>
 
         </div>
@@ -106,7 +106,7 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        An old Android phone would probably work too, though it may be a little harder for your parent/grandparent to see you.  If you have a smartphone that 
+                        An old Android phone would probably work too, though it may be a little harder for your relative/friend to see you.  If you have a smartphone that 
                         is not an iPhone, it is probably an Android phone.
                     </p>
 

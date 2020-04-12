@@ -60,11 +60,11 @@ export default class Home extends React.Component {
                 <div className="content">
 
                     <p>
-                        Your parent/grandparent has received the tablet, and now it's time to get them introduced to it!
+                        Your relative/friend has received the tablet, and now it's time to get them introduced to it!
                     </p>
 
                     <p>
-                        If your parent/grandparent has a nurse or aide, you might consider asking for their help in this.  
+                        If your relative/friend has a nurse or aide, you might consider asking for their help in this.  
                         If they are currently in a hospital or rehab facility, you could try calling the nurse's station to see if one of them can help.
                     </p>
 

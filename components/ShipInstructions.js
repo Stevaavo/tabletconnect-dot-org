@@ -59,12 +59,12 @@ export default class Home extends React.Component {
                 <div className="content">
 
                     <p>
-                        Let's get the tablet to your parent/grandparent!
+                        Let's get the tablet to your relative/friend!
                     </p>
 
                     <p>
-                        If you are dropping off the tablet at your parent/grandparent's home, you might consider leaving the tablet on when you do so.  
-                        If it arrives at your parent/grandparent already on, then all they need to do is plug it in. 
+                        If you are dropping off the tablet at your relative/friend's home, or at a hospital/rehab front desk, you might consider leaving the tablet on when you do so.  
+                        If it's already on when it reaches your relative/friend, then all they need to do is plug it in. 
                         Tablets have larger batteries than phones, and can usually stay on for several days between charges, if they are not in active use. 
                     </p>
 
