@@ -101,12 +101,14 @@ export default class Home extends React.Component {
 
                 <p className="subtitle is-size-6-mobile">
                   This guide will walk you through how to buy and set up a dedicated <strong className="highlight">video-chat tablet</strong> that you can mail to a loved one.
+                  I originally set up a tablet like this for my grandmother, who has been cut off from visitors due to the coronavirus crisis.
                 </p>
 
-                <p className="subtitle is-size-6-mobile">
+                {/* <p className="subtitle is-size-6-mobile">
                   I originally set up a tablet like this for my grandmother, who has been cut off from visitors due to the coronavirus crisis. 
                   It's worked very well for her, so I've written this guide on a volunteer basis to help others do the same.
-                </p>
+                </p> */}
+
                 <p className="subtitle is-size-6-mobile">
                   The tablet will <strong className="highlight">automatically pick up Skype video calls</strong> from 
                   you <strong className="highlight">and other family</strong>, so your friend/relative doesn't 
