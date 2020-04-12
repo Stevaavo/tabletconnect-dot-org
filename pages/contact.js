@@ -7,6 +7,7 @@ import Header from '../components/Header'
 // import user from '../utils/user'
 import Footer from '../components/Footer'
 import { initGA, logPageView } from '../utils/analytics'
+import TrackedLink from '../components/TrackedLink'
 
 
 // import RegisterOrLoginBox from '../components/tabs/RegisterOrLoginBox'
@@ -38,7 +39,7 @@ export default class Home extends React.Component {
 
     return <div>
 
-        <Header />
+        <Header title="Contact Us" />
 
         {/* Welcome!  Click <a href="tool">here</a> for the tool. */}
 
@@ -51,18 +52,18 @@ export default class Home extends React.Component {
                     <br className="is-hidden-mobile"/>
 
                     <p className="subtitle is-size-6-mobile">
-                        Having trouble setting up your tablet?  Feel free to email <a href="mailto:help@tabletconnect.org">help@tabletconnect.org</a> for assistance, 
+                        Having trouble setting up your tablet?  Feel free to email <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink> for assistance, 
                         or to request a support phone call.  This is provided on a volunteer basis.
                     </p>
 
                     <p className="subtitle is-size-6-mobile">
                         Or, if you'd like to volunteer to offer tech support to others, we'd be grateful for the help! 
-                        Shoot an email to <a href="mailto:volunteers@tabletconnect.org">volunteers@tabletconnect.org</a>
+                        Shoot an email to <TrackedLink href="mailto:volunteers@tabletconnect.org">volunteers@tabletconnect.org</TrackedLink>
                     </p>
 
                     <p className="subtitle is-size-6-mobile">
                         Want to talk about something else?  
-                        Drop a line to <a href="mailto:hello@tabletconnect.org">hello@tabletconnect.org</a>
+                        Drop a line to <TrackedLink href="mailto:hello@tabletconnect.org">hello@tabletconnect.org</TrackedLink>
                     </p>
 
 

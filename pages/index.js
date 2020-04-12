@@ -99,14 +99,17 @@ export default class Home extends React.Component {
                 {/* <p className="subtitle is-size-6-mobile">Video chat has allowed many of us to maintain close ties with friends and family in spite of the coronavirus.  However,
                 many senior citizens don't have a phone or computer, or the technical skill to use one for a video call.</p> */}
 
-                <p className="subtitle is-size-6-mobile">This website will show you how to buy and set up a dedicated Skype tablet that you can mail to an older relative.</p>
+                <p className="subtitle is-size-6-mobile">
+                  This website will show you how to buy and set up a dedicated Skype tablet that you can mail to an older relative.
+                  I originally set up a tablet like this for my grandmother, who has been cut off from visitors due to the crisis.
+                </p>
                 <p className="subtitle is-size-6-mobile">The tablet will <strong className="highlight">automatically pick up your video calls</strong>, so your relative doesn't 
                 need to learn how to use it.  They just need to keep it somewhere they can see/hear you when you call.</p>
                 <p className="subtitle is-size-6-mobile">The tablet will connect to the internet through the cellular network, so <strong className="highlight">no wifi is required</strong>.</p>
                 {/* <p className="subtitle is-size-6-mobile"></p> */}
                 <p className="subtitle is-size-6-mobile">You can give the person's Skype name to other friends and relatives, so that they can video-call the tablet as well.</p>
-                <p className="subtitle is-size-6-mobile">I originally set up a tablet like this for my grandmother, who has been cut off from visitors for several weeks now
-                due to the crisis.  It has worked very well for her.</p>
+                {/* <p className="subtitle is-size-6-mobile">I originally set up a tablet like this for my grandmother, who has been cut off from visitors for several weeks now
+                due to the crisis.</p> */}
 
 
                 <Link  href="/instructions">

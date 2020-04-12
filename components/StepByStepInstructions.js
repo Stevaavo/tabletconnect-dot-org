@@ -11,9 +11,9 @@ import MarkingInstructions from '../components/MarkingInstructions'
 import ShipInstructions from '../components/ShipInstructions'
 import OnboardInstructions from '../components/OnboardInstructions'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
-import scrollToComponent from 'react-scroll-to-component'
+// import scrollToComponent from 'react-scroll-to-component'
 
-
+var scrollToComponent
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -65,6 +65,13 @@ export default class Home extends React.Component {
     scrollToComponent(this.wifiOrCellQuestion, { offset: 0, align: 'top', duration: 1000})
    
 
+  }
+
+
+  componentDidMount () {
+
+    scrollToComponent = require('react-scroll-to-component')
+    
   }
 
 

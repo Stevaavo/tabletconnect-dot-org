@@ -5,9 +5,9 @@ import Header from '../components/Header'
 import StepByStepInstructions from '../components/StepByStepInstructions'
 import Footer from '../components/Footer'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
-import scrollToComponent from 'react-scroll-to-component'
+// import scrollToComponent from 'react-scroll-to-component'
 
-
+var scrollToComponent
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -62,6 +62,9 @@ export default class Home extends React.Component {
 
 
   componentDidMount () {
+
+    scrollToComponent = require('react-scroll-to-component')
+    
     if (!window.GA_INITIALIZED) {
       initGA()
       window.GA_INITIALIZED = true
@@ -107,7 +110,7 @@ export default class Home extends React.Component {
     console.log("State as of render: ", this.state)
     return <div>
 
-        <Header />
+        <Header title="Instructions" />
 
         {techSavvyQuestion}
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import NextHead from 'next/head'
 import Link from 'next/link'
+import config from '../config'
 
 export default class Header extends React.Component {
 
@@ -9,10 +10,19 @@ export default class Header extends React.Component {
     }
 
     render() {
-        return <section>
 
+        var title
+
+        if (this.props.title && config.title) {
+            title = this.props.title + " - " + config.title
+        } else if (this.props.title || config.title) {
+            title = this.props.title || config.title
+        }
+
+        return <section>
         
             <NextHead>
+                {title && <title>{title}</title>}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
                 <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet" />
