@@ -63,7 +63,9 @@ export default class Home extends React.Component {
 
   componentDidMount () {
 
-    scrollToComponent = require('react-scroll-to-component')
+    // scrollToComponent = require('react-scroll-to-component')
+    scrollToComponent = require('ssr-scroll-to')
+
     
     if (!window.GA_INITIALIZED) {
       initGA()

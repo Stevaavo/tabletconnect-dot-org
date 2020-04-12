@@ -19,6 +19,7 @@
     "react-ga": "^2.7.0",
     "react-number-format": "^4.4.1",
     "react-scroll-to-component": "^1.0.2",
+    "ssr-scroll-to": "0.0.2",
     "styled-jsx-plugin-sass": "^1.0.0"
   }
 }
