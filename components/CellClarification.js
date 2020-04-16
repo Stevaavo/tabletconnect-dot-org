@@ -125,7 +125,7 @@ export default class Home extends React.Component {
 
                 <div className="content">
                     <p>
-                        I recommend buying <TrackedLink href="https://www.amazon.com/gp/product/B07XC3CW4G/ref=as_li_tl?ie=UTF8&tag=tabletconne07-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07XC3CW4G&linkId=49a1b252ae7396a641846e8731e55011">this tablet from Amazon</TrackedLink>.
+                        I recommend buying <TrackedLink href="https://www.amazon.com/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G">this tablet from Amazon</TrackedLink>.
                     </p>
 
                     <p>
