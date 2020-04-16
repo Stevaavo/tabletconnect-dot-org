@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/styles.scss'
 // import Link from 'next/link'
-import BuyTabletInstructions from '../components/BuyTabletInstructions'
-import TableOfTablets from './TableOfTablets'
+// import BuyTabletInstructions from '../components/BuyTabletInstructions'
+// import TableOfTablets from './TableOfTablets'
 import TrackedLink from '../components/TrackedLink'
 
 

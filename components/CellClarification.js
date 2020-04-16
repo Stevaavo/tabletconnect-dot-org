@@ -64,6 +64,10 @@ export default class Home extends React.Component {
         this.props.tabletChosen()
     }
 
+    const iPadWarning = <p>
+        <strong className="highlight">Heads Up:</strong> I recommend against going with an iPad, because iPads and iPhones can't be set up to answer Skype calls automatically.
+    </p>
+
     const dataExplanation = <p>
         Your plan might already include unlimited data for the tablet.  Or, you might be asked to choose a plan for the tablet with a limited amount of monthly data.
         If you need to choose how much data to buy for the tablet, a good rule of thumb is that every gigabyte (GB) of "LTE" data works out 
@@ -80,7 +84,7 @@ export default class Home extends React.Component {
         <p>
             I recommend <TrackedLink href="https://www.amazon.com/gp/product/B0763358FV">this $7.99 
             25-foot microUSB cable</TrackedLink> that I bought for my grandmother.  It's definitely overkill, but it will get the job done. 
-            Just <strong className="highlight">make sure it doesn't get positioned somewhere that it might pose a tripping hazard.</strong>
+            Just <strong className="highlight">make sure it doesn't get positioned somewhere that it might pose a tripping hazard</strong>.
         </p>
     </div>
     
@@ -92,7 +96,7 @@ export default class Home extends React.Component {
 
         <p>
             I recommend <TrackedLink href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot USB-C cable</TrackedLink>.
-            Just <strong className="highlight">make sure it doesn't get positioned somewhere that it might pose a tripping hazard.</strong>
+            Just <strong className="highlight">make sure it doesn't get positioned somewhere that it might pose a tripping hazard</strong>.
         </p>
     </div>
     
@@ -127,6 +131,8 @@ export default class Home extends React.Component {
                     <p>
                         I recommend buying <TrackedLink href="https://www.amazon.com/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G">this tablet from Amazon</TrackedLink>.
                     </p>
+
+                    {iPadWarning}
 
                     <p>
                         After the tablet arrives, call {this.state.carrier} and tell them you want to add a tablet to your cell phone plan.  
@@ -194,6 +200,8 @@ export default class Home extends React.Component {
                         In most cases, {this.state.carrier} will charge between $15 and $35 extra per month to add a tablet to your phone plan.
                     </p>
 
+                    {iPadWarning}
+
                     {dataExplanation}
 
                     {microUsbCableRecommendation}
@@ -241,8 +249,10 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        In most cases, {this.state.carrier} will charge $10/month to add a tablet to your phone plan.
+                        In most cases, {this.state.carrier} will charge between $10 and $20 per month to add a tablet to your phone plan.
                     </p>
+
+                    {iPadWarning}
 
                     {dataExplanation}
 
@@ -291,6 +301,8 @@ export default class Home extends React.Component {
                         When the tablet arrives, it will already be connected to your {this.state.carrier} plan "out of the box."
                     </p>
 
+                    {iPadWarning}
+
                     <p>
                         In most cases, {this.state.carrier} will charge between $15 and $30 per month to add a tablet to your phone plan.
                     </p>
@@ -334,13 +346,16 @@ export default class Home extends React.Component {
 
                 <div className="content">
                     <p>
-                        I'd suggest calling your phone carrier and purchasing the cheapest Android tablet that they have available.
+                        I'd suggest calling your phone carrier and purchasing the cheapest Android tablet that they have available. 
+                        {/* I recommend against going with an iPad, because iPads and iPhones can't be set up to answer Skype calls automatically, unfortunately. */}
                     </p>
 
                     <p>
                         If you're not sure what to choose, or if your carrier doesn't sell tablets, feel free to shoot us an email at <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink>.  
                         Tell us which carrier you are using, and we'll find a good option for you.
                     </p>
+
+                    {iPadWarning}
 
                     {dataExplanation}
 

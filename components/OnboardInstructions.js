@@ -2,8 +2,8 @@ import React from 'react'
 import '../styles/styles.scss'
 import config from '../config'
 import Link from 'next/link'
-import BuyTabletInstructions from './BuyTabletInstructions'
-import TableOfTablets from './TableOfTablets'
+// import BuyTabletInstructions from './BuyTabletInstructions'
+// import TableOfTablets from './TableOfTablets'
 
 
 export default class Home extends React.Component {

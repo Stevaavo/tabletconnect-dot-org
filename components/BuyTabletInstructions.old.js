@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/styles.scss'
 // import Link from 'next/link'
-import BuyTabletInstructions from '../components/BuyTabletInstructions'
+// import BuyTabletInstructions from '../components/BuyTabletInstructions'
 import TableOfTablets from './TableOfTablets'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
 import TrackedLink from '../components/TrackedLink'
@@ -106,14 +106,20 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
+                        Alternatively, you can buy an inexpensive Android tablet.  I recommend 
+                        the <TrackedLink href="https://www.bestbuy.com/site/samsung-galaxy-tab-a-latest-model-8-32gb-black/6368084.p?skuId=6368084" >Samsung Galaxy Tab A - Wifi Version</TrackedLink>, 
+                        which costs $149.
+                    </p>
+
+                    <p>
                         An old Android phone would probably work too, though it may be a little harder for your relative/friend to see you.  If you have a smartphone that 
                         is not an iPhone, it is probably an Android phone.
                     </p>
 
                     <p>
-                        Alternatively, you can buy an inexpensive Android tablet.  I recommend 
-                        the <TrackedLink href="https://www.bestbuy.com/site/samsung-galaxy-tab-a-latest-model-8-32gb-black/6368084.p?skuId=6368084" >Samsung Galaxy Tab A - Wifi Version</TrackedLink>, 
-                        which costs $149.
+                        It is also possible to use an iPad or iPhone.
+                        However, iPads and iPhones will not be able to answer calls automatically. 
+                        Only the Android version of the Skype app offers that setting.
                     </p>
 
                 </div>

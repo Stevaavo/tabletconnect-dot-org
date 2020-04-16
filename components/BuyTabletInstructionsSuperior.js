@@ -2,8 +2,8 @@ import React from 'react'
 import '../styles/styles.scss'
 import config from '../config'
 import Link from 'next/link'
-import BuyTabletInstructions from './BuyTabletInstructions'
-import TableOfTablets from './TableOfTablets'
+// import BuyTabletInstructions from './BuyTabletInstructions'
+// import TableOfTablets from './TableOfTablets'
 import CellClarification from './CellClarification'
 import TrackedLink from '../components/TrackedLink'
 
@@ -59,14 +59,20 @@ export default class Home extends React.Component {
                     </p>
 
                     <p>
-                        An old Android phone would probably work too, though it may be a little harder for your relative/friend to see you.  If you have a smartphone that 
-                        is not an iPhone, it is probably an Android phone.
+                        Alternatively, you can buy an inexpensive Android tablet.  I recommend 
+                        the <TrackedLink href="https://www.bestbuy.com/site/samsung-galaxy-tab-a-latest-model-8-32gb-black/6368084.p?skuId=6368084" >Samsung Galaxy Tab A - Wifi Version</TrackedLink>, 
+                        which costs $149.  You can also find these used on eBay at a pretty low cost.
                     </p>
 
                     <p>
-                        Alternatively, you can buy an inexpensive Android tablet.  I recommend 
-                        the <TrackedLink href="https://www.bestbuy.com/site/samsung-galaxy-tab-a-latest-model-8-32gb-black/6368084.p?skuId=6368084" >Samsung Galaxy Tab A - Wifi Version</TrackedLink>, 
-                        which costs $149.
+                        An old Android phone would probably work too.  You can just use it on WiFi, instead of setting up a cellular plan for it.
+                        If you have a smartphone that is not an iPhone, it is probably an Android phone.
+                    </p>
+
+                    <p>
+                        It is also possible to use an iPad or iPhone. 
+                        Unfortunately though, <strong className="highlight">iPads and iPhones can't be set up to answer calls automatically</strong>. 
+                        Only the Android version of the Skype app offers that setting. 
                     </p>
 
                 </div>
