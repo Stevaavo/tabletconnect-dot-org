@@ -100,8 +100,12 @@ export default class Home extends React.Component {
                 many senior citizens don't have a phone or computer, or the technical skill to use one for a video call.</p> */}
 
                 <p className="subtitle is-size-6-mobile">
-                  This guide will walk you through how to buy and set up a dedicated <strong className="highlight">video-chat tablet</strong> that you can mail to a loved one.
-                  I originally set up a tablet like this for my grandmother, who has been cut off from visitors due to the coronavirus crisis.
+                  Hello!  This is a volunteer project intended to help families that have become isolated from older loved ones due to the coronavirus crisis.
+                </p>
+
+                <p className="subtitle is-size-6-mobile">
+                  Our guide will walk you through the process of buying and setting up a dedicated <strong className="highlight">video-chat tablet</strong> that you can mail to a loved one.
+                  I originally set up a tablet like this for my grandmother, who has been cut off from visitors by the crisis.
                 </p>
 
                 {/* <p className="subtitle is-size-6-mobile">
@@ -116,6 +120,17 @@ export default class Home extends React.Component {
                   They just need to keep it somewhere they can see or hear you when you call.
                 </p>
                 <p className="subtitle is-size-6-mobile">The tablet will connect to the internet through the cellular network, so <strong className="highlight">no wifi is required</strong>.</p>
+
+                <p className="subtitle is-size-6-mobile">
+                  If you have any trouble setting it up, feel free to reach out to 
+                  our <Link  href="/support">
+                    <a>
+                      volunteer tech support
+                    </a>
+                  </Link> for help.
+                </p>
+
+
                 {/* <p className="subtitle is-size-6-mobile"></p> */}
                 {/* <p className="subtitle is-size-6-mobile">You can give the person's Skype name to other friends and relatives, so that they can video-call the tablet as well.</p> */}
                 {/* <p className="subtitle is-size-6-mobile">I originally set up a tablet like this for my grandmother, who has been cut off from visitors for several weeks now
