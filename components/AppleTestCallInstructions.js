@@ -3,7 +3,10 @@ import '../styles/styles.scss'
 import config from '../config'
 // import Link from 'next/link'
 // import BuyTabletInstructions from './BuyTabletInstructions'
+// import TableOfTablets from './TableOfTablets'
+import TrackedLink from '../components/TrackedLink'
 import ClickableImage from '../components/ClickableImage'
+
 
 
 export default class Home extends React.Component {
@@ -55,35 +58,35 @@ export default class Home extends React.Component {
         <section className="section">
             <div className="container">
 
-                <h1 className="title">Part {this.props.stepNumber}: Mark the Buttons/Charger</h1>
+                <h1 className="title">Part {this.props.stepNumber}: Make a Test FaceTime Call</h1>
 
-                <div className="columns is-vcentered">
-
-                    
-
-                    <div className="column is-one-third">
-                        <ClickableImage src="/static/markedWithCharger.jpg" />
-                    </div>
-
+                <div className="columns is-centered is-vcentered">
 
                     <div className="column">
 
                         <div className="content">
 
                             <p>
-                                I recommend marking the buttons for <strong className="highlight">"Power,"</strong> <strong className="highlight">"Volume Up"</strong> and <strong className="highlight">"Volume Down"</strong>, as well as the location of the <strong className="highlight">charging port</strong>.  
-                                {/* This might make it easier if you need to help your relative/friend troubleshoot an issue with the tablet over the phone. */}
+                                Restart the iPad or iPhone.  
+                                When it's finished restarting, don't touch it or unlock it.  
+                                Instead, try making a FaceTime call to the iPad or iPhone.
                             </p>
 
                             <p>
-                                You can mark the tablet by putting down masking tape or duct tape, and writing on it with a sharpie.
+                                Confirm that your call is picked up automatically with video.  If it does, you're in business!
+                            </p>
+
+                            <p>
+                                During this test call, you may want to <strong className="highlight">adjust the iPad/iPhone's volume</strong> up or down to the level that you think your relative/friend would prefer.
                             </p>
 
                         </div>
 
                     </div>
 
+
                 </div>
+
 
 
 

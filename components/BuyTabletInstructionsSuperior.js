@@ -6,6 +6,7 @@ import Link from 'next/link'
 // import TableOfTablets from './TableOfTablets'
 import CellClarification from './CellClarification'
 import TrackedLink from '../components/TrackedLink'
+import WiFiTabletClarification from '../components/WifiTabletClarification'
 
 
 export default class Home extends React.Component {
@@ -104,7 +105,7 @@ export default class Home extends React.Component {
                 {this.props.cellular && <h1 className="title">Part {this.props.stepNumber}: Getting a Tablet and 4G Service</h1> }
                 {!this.props.cellular && <h1 className="title">Part {this.props.stepNumber}: Finding a Wifi Tablet</h1> }
 
-                {this.props.cellular == false && buyWifi}
+                {this.props.cellular == false && <WiFiTabletClarification tabletChosen={this.props.tabletChosen} />}
 
                 
                 {this.props.cellular && <CellClarification techSavvy={this.props.techSavvy} tabletChosen={this.props.tabletChosen} />}

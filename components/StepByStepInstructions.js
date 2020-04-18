@@ -11,6 +11,7 @@ import MarkingInstructions from '../components/MarkingInstructions'
 import ShipInstructions from '../components/ShipInstructions'
 import OnboardInstructions from '../components/OnboardInstructions'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
+import AppleTestCallInstructions from '../components/AppleTestCallInstructions'
 // import scrollToComponent from 'react-scroll-to-component'
 // import scrollToComponent from 'ssr-scroll-to'
 
@@ -20,7 +21,7 @@ export default class Home extends React.Component {
   constructor(props) {
       super(props)
       this.state = {
-        //   cellular: true
+        //   cellular: false
       }
   }
 
@@ -76,11 +77,11 @@ export default class Home extends React.Component {
 
   }
 
-  tabletChosen = () => {
+  tabletChosen = (tablet) => {
 
-    if (!this.state.tabletChosen) {
+    if (this.state.tabletChosen != tablet) {
       this.setState({
-          tabletChosen: true
+          tabletChosen: tablet
       })
     }
   }
@@ -111,17 +112,23 @@ export default class Home extends React.Component {
 
     const remainingInstructions = <div>
 
-        <SetupInstructions  
+        {this.state.tabletChosen != "ipad" && <SetupInstructions  
             techSavvy={this.props.techSavvy} 
             cellular={this.state.cellular} 
             stepNumber={stepNumber++}
-        />
+        />}
 
-        <TestCallInstructions
+        {this.state.tabletChosen != "ipad" && <TestCallInstructions
             techSavvy={this.props.techSavvy} 
             stepNumber={stepNumber++}
 
-        />
+        />}
+
+        {this.state.tabletChosen == "ipad" && <AppleTestCallInstructions
+            // techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
+
+        />}
 
         <MarkingInstructions
             techSavvy={this.props.techSavvy} 
@@ -252,7 +259,7 @@ export default class Home extends React.Component {
 
         { typeof this.state.cellular != "undefined" && buyInstructions }
 
-        {(this.state.tabletChosen || this.state.cellular == false) && remainingInstructions}
+        {(this.state.tabletChosen) && remainingInstructions}
 
     </div>
     

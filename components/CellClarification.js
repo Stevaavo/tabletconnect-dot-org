@@ -61,7 +61,7 @@ export default class Home extends React.Component {
   render() {
 
     if (this.state.carrier || this.state.USA == false) {
-        this.props.tabletChosen()
+        this.props.tabletChosen("android")
     }
 
     const iPadWarning = <p>
@@ -132,7 +132,7 @@ export default class Home extends React.Component {
                         I recommend buying <TrackedLink href="https://www.amazon.com/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G">this tablet from Amazon</TrackedLink>.
                     </p>
 
-                    {iPadWarning}
+                    {/* {iPadWarning} */}
 
                     <p>
                         After the tablet arrives, call {this.state.carrier} and tell them you want to add a tablet to your cell phone plan.  
@@ -200,7 +200,7 @@ export default class Home extends React.Component {
                         In most cases, {this.state.carrier} will charge between $15 and $35 extra per month to add a tablet to your phone plan.
                     </p>
 
-                    {iPadWarning}
+                    {/* {iPadWarning} */}
 
                     {dataExplanation}
 
@@ -252,7 +252,7 @@ export default class Home extends React.Component {
                         In most cases, {this.state.carrier} will charge between $10 and $20 per month to add a tablet to your phone plan.
                     </p>
 
-                    {iPadWarning}
+                    {/* {iPadWarning} */}
 
                     {dataExplanation}
 
@@ -301,7 +301,7 @@ export default class Home extends React.Component {
                         When the tablet arrives, it will already be connected to your {this.state.carrier} plan "out of the box."
                     </p>
 
-                    {iPadWarning}
+                    {/* {iPadWarning} */}
 
                     <p>
                         In most cases, {this.state.carrier} will charge between $15 and $30 per month to add a tablet to your phone plan.
