@@ -58,7 +58,8 @@ export default class Home extends React.Component {
         this.setState( () => {
             return {
                 [name]: !falseButton,
-                fadeOut: false
+                fadeOut: false,
+                tabletChosen: undefined
             }
         });
 
@@ -88,6 +89,8 @@ export default class Home extends React.Component {
 
 
   render() {
+
+    console.log(this.state)
 
     let stepNumber = 2
 
