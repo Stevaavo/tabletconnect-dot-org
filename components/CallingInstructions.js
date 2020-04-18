@@ -5,6 +5,8 @@ import config from '../config'
 // import BuyTabletInstructions from './BuyTabletInstructions'
 // import TableOfTablets from './TableOfTablets'
 import TrackedLink from '../components/TrackedLink'
+import ClickableImage from '../components/ClickableImage'
+
 
 
 export default class Home extends React.Component {
@@ -103,9 +105,7 @@ export default class Home extends React.Component {
                         
                         <div className="columns is-centered">
                             <div className="column is-half">
-                                <figure class="image">
-                                    <img src="/static/skypeCallExample.png" />
-                                </figure>
+                                <ClickableImage src="/static/skypeCallExample.png" />
                             </div>
                         </div>
 

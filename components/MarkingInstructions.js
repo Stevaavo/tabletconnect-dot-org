@@ -3,7 +3,7 @@ import '../styles/styles.scss'
 import config from '../config'
 // import Link from 'next/link'
 // import BuyTabletInstructions from './BuyTabletInstructions'
-import TableOfTablets from './TableOfTablets'
+import ClickableImage from '../components/ClickableImage'
 
 
 export default class Home extends React.Component {
@@ -59,10 +59,10 @@ export default class Home extends React.Component {
 
                 <div className="columns is-vcentered">
 
+                    
+
                     <div className="column is-one-third">
-                        <figure class="image">
-                            <img src="/static/marked.jpg" />
-                        </figure>
+                        <ClickableImage src="/static/markedWithCharger.jpg" />
                     </div>
 
 
@@ -71,12 +71,12 @@ export default class Home extends React.Component {
                         <div className="content">
 
                             <p>
-                                I recommend marking the buttons for <strong className="highlight">"Power,"</strong> <strong className="highlight">"Volume Up"</strong> and <strong className="highlight">"Volume Down"</strong>.  
+                                I recommend marking the buttons for <strong className="highlight">"Power,"</strong> <strong className="highlight">"Volume Up"</strong> and <strong className="highlight">"Volume Down"</strong>, as well as the location of the <strong className="highlight">charging port</strong>.  
                                 {/* This might make it easier if you need to help your relative/friend troubleshoot an issue with the tablet over the phone. */}
                             </p>
 
                             <p>
-                                You can mark the tablet by putting down a piece of masking tape or duct tape alongside the buttons, and writing on it with a sharpie.
+                                You can mark the tablet by putting down masking tape or duct tape, and writing on it with a sharpie.
                             </p>
 
                         </div>
