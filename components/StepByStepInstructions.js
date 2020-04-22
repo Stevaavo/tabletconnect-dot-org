@@ -12,6 +12,7 @@ import ShipInstructions from '../components/ShipInstructions'
 import OnboardInstructions from '../components/OnboardInstructions'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
 import AppleTestCallInstructions from '../components/AppleTestCallInstructions'
+import FbMessengerInstructions from '../components/FbMessengerInstructions'
 // import scrollToComponent from 'react-scroll-to-component'
 // import scrollToComponent from 'ssr-scroll-to'
 
@@ -21,7 +22,8 @@ export default class Home extends React.Component {
   constructor(props) {
       super(props)
       this.state = {
-        //   cellular: false
+          cellular: true,
+          tabletChosen: "android"
       }
   }
 
@@ -122,6 +124,12 @@ export default class Home extends React.Component {
         />}
 
         {this.state.tabletChosen != "ipad" && <TestCallInstructions
+            techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
+
+        />}
+
+        {this.state.tabletChosen != "ipad" && <FbMessengerInstructions
             techSavvy={this.props.techSavvy} 
             stepNumber={stepNumber++}
 
