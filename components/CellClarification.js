@@ -128,6 +128,27 @@ export default class Home extends React.Component {
             <div className="column">
 
                 <div className="content">
+
+
+                    <p>
+                        <strong className="highlight">UPDATE 4/22/2020:</strong> I've heard from a couple readers that they're having a hard time activating tablets on AT&T. 
+                        I'm working on finding a solution now, and hope to have this part of the guide updated by Friday, April 24. 
+                        In the meantime, I would recommend that AT&T subscribers hold off on following the instructions below. 
+                        You might consider 
+                        purchasing <TrackedLink href="https://prepaid.t-mobile.com/product-details/alcatel-joy-tab/Metallic%20Black">this $168 tablet</TrackedLink> from 
+                        T Mobile Prepaid instead, with T Mobile Prepaid's $10/month, 2GB/month data plan.
+                    </p>
+
+                    <p>
+                        If you already bought the tablet that I recommended below, and AT&T won't let you activate it, drop me a line 
+                        at <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink> and
+                        I'll help you get that resolved.
+                    </p>
+
+                    <p>------------------------------------</p>
+
+
+
                     <p>
                         I recommend buying <TrackedLink href="https://www.amazon.com/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G">this tablet from Amazon</TrackedLink>.
                     </p>
