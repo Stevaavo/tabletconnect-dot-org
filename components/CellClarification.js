@@ -131,6 +131,50 @@ export default class Home extends React.Component {
 
 
                     <p>
+                        <strong className="highlight">UPDATED 4/24/2020:</strong> If you followed the previous version of this guide that recommended buying a tablet from 
+                        Amazon, and you are now having trouble activating it on the AT&T network, 
+                        shoot me an email at <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink> and
+                        I'll walk you through the solution.
+                    </p>
+
+                    <p>------------------------------------</p>
+
+                    <p>
+                        Unfortunately AT&T doesn't offer any low-cost tablets. 
+                        Thus, I recommend that you actually 
+                        get <TrackedLink href="https://prepaid.t-mobile.com/product-details/alcatel-joy-tab/Metallic%20Black">this $168 tablet</TrackedLink> from 
+                        T Mobile Prepaid instead, with its own separate plan.
+                    </p>
+
+                    <p>
+                        T Mobile Prepaid has data plans that start at $10/month for 2 GB of high-speed data, going up to $50/month for unlimited data. 
+                        1 GB of high-speed data works out to roughly 1 hour and 15 mintues of talk time.
+                        However, T Mobile is also offering 50 GB of high-speed data to all customers for free through May 13 due to COVID, 
+                        and there is a chance that this will be extended.
+                    </p>
+
+                    {microUsbCableRecommendation}
+
+                </div>
+
+                <div className="content">
+
+                    <p>
+                        Alternatively, if you would like to stick with AT&T in spite of the higher tablet cost, I recommend 
+                        purchasing <TrackedLink href="https://www.att.com/buy/tablets/samsung-galaxy-tab-s5e-64gb-black.html">this $479 tablet</TrackedLink>. 
+                        In that case, if you want a longer charging cable, it will need to be a "USB-C" type cable.  
+                        I recommend <TrackedLink href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot USB-C cable</TrackedLink>.
+                    </p>
+
+
+
+
+
+
+
+
+
+                    {/* <p>
                         <strong className="highlight">UPDATE 4/22/2020:</strong> I've heard from a couple readers that they're having a hard time activating tablets on AT&T. 
                         I'm working on finding a solution now, and hope to have this part of the guide updated by Friday, April 24. 
                         In the meantime, I would recommend that AT&T subscribers hold off on following the instructions below. 
@@ -153,8 +197,6 @@ export default class Home extends React.Component {
                         I recommend buying <TrackedLink href="https://www.amazon.com/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G">this tablet from Amazon</TrackedLink>.
                     </p>
 
-                    {/* {iPadWarning} */}
-
                     <p>
                         After the tablet arrives, call {this.state.carrier} and tell them you want to add a tablet to your cell phone plan.  
                         Ask them to send you a SIM card for it.  When you get the SIM card in the mail, insert it into the tablet, and you’re good to go!
@@ -170,7 +212,7 @@ export default class Home extends React.Component {
 
                     {dataExplanation}
 
-                    {microUsbCableRecommendation}
+                    {microUsbCableRecommendation} */}
 
                 </div>
 
