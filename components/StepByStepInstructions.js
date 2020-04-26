@@ -89,6 +89,8 @@ export default class Home extends React.Component {
       this.setState({
           tabletChosen: tablet
       })
+
+      logEvent("choice", "tabletChosen", tablet)
     }
   }
 

@@ -3,6 +3,7 @@ import '../styles/styles.scss'
 import config from '../config'
 import Link from 'next/link'
 import TrackedLink from '../components/TrackedLink'
+import { initGA, logPageView, logEvent } from '../utils/analytics'
 
 
 export default class Home extends React.Component {
@@ -38,6 +39,8 @@ export default class Home extends React.Component {
             [name]: !falseButton
         }
     });
+    
+    logEvent("choice", name, (!falseButton).toString() )
   }
 
 
@@ -53,6 +56,9 @@ export default class Home extends React.Component {
             carrier: name
         }
     });
+
+    
+    logEvent("choice", "carrier", name)
   }
 
 

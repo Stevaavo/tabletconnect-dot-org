@@ -6,6 +6,7 @@ import Link from 'next/link'
 // import TableOfTablets from './TableOfTablets'
 import CellClarification from './CellClarification'
 import TrackedLink from '../components/TrackedLink'
+import { initGA, logPageView, logEvent } from '../utils/analytics'
 
 
 export default class Home extends React.Component {
@@ -41,6 +42,10 @@ export default class Home extends React.Component {
             [name]: !falseButton
         }
     });
+
+    logEvent(name, (!falseButton).toString() )
+
+
   }
 
 

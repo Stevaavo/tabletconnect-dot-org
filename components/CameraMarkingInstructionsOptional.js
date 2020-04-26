@@ -4,6 +4,7 @@ import config from '../config'
 // import Link from 'next/link'
 // import BuyTabletInstructions from './BuyTabletInstructions'
 import ClickableImage from '../components/ClickableImage'
+import { initGA, logPageView, logEvent } from '../utils/analytics'
 
 
 export default class Home extends React.Component {
@@ -39,13 +40,15 @@ export default class Home extends React.Component {
             [name]: !falseButton
         }
     });
+
+    logEvent("choice", name, (!falseButton).toString() )
   }
 
 
   render() {
 
 
-    const instructions = <div>
+    const instructions = <div className="animated fadeIn">
 
         <div className="content">
 
