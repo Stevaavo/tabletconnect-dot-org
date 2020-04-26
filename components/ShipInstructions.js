@@ -87,7 +87,7 @@ export default class Home extends React.Component {
                             </ul>
 
                             <p>
-                                At right is a photo of the makeshift packaging I used.
+                                This is a photo of makeshift packaging that I put together to ship a tablet with the charger plugged in.
                             </p>
 
                             {/* <p>
