@@ -418,7 +418,7 @@ export default class Home extends React.Component {
                     {!this.state.USA && this.props.techSavvy && <p>
                         <strong className="highlight">NOTE:</strong> If you live outside the US and can contribute tablet/carrier suggestions for your country 
                         (see the <a name="USA" onClick={this.handleButtonClick}>US portion of this guide</a> for examples), that would be very much appreciated.
-                        Shoot an email to <TrackedLink href="mailto:volunteers@tabletconnect.org">volunteers@tabletconnect.org</TrackedLink>
+                        Shoot an email to <TrackedLink href="mailto:volunteers@tabletconnect.org">volunteers@tabletconnect.org</TrackedLink> for more details.
                     </p>}
 
                     <p>
