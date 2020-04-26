@@ -15,6 +15,7 @@ import AppleTestCallInstructions from '../components/AppleTestCallInstructions'
 import FbMessengerInstructions from '../components/FbMessengerInstructions'
 import TeamviewerInstructions from '../components/TeamviewerInstructions'
 import CameraMarkingInstructionsOptional from '../components/CameraMarkingInstructionsOptional'
+import ConfCall from '../components/ConfCall'
 // import scrollToComponent from 'react-scroll-to-component'
 // import scrollToComponent from 'ssr-scroll-to'
 
@@ -24,8 +25,8 @@ export default class Home extends React.Component {
   constructor(props) {
       super(props)
       this.state = {
-        //   cellular: true,
-        //   tabletChosen: "android"
+          cellular: true,
+          tabletChosen: "android"
       }
   }
 
@@ -168,6 +169,12 @@ export default class Home extends React.Component {
             techSavvy={this.props.techSavvy} 
             cellular={this.state.cellular} 
         />
+
+        {this.state.tabletChosen != "ipad" && <ConfCall
+            techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
+
+        />}
 
     </div>
 
