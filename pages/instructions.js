@@ -44,7 +44,7 @@ export default class Home extends React.Component {
         }
     });
 
-    logEvent("choice", name, (!falseButton).toString() )
+    logEvent(name, (!falseButton).toString() )
 
     setTimeout( () => {
   

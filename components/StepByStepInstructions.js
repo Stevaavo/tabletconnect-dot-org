@@ -56,7 +56,7 @@ export default class Home extends React.Component {
         }
     });
 
-    logEvent("choice", name, (!falseButton).toString() )
+    logEvent(name, (!falseButton).toString() )
 
     setTimeout( () => {
   
@@ -90,7 +90,7 @@ export default class Home extends React.Component {
           tabletChosen: tablet
       })
 
-      logEvent("choice", "tabletChosen", tablet)
+      logEvent("tabletChosen", tablet)
     }
   }
 

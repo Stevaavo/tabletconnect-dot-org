@@ -41,7 +41,7 @@ export default class Home extends React.Component {
         }
     });
 
-    logEvent("choice", "teamviewerInstructions", (!falseButton).toString() )
+    logEvent("teamviewerInstructions", (!falseButton).toString() )
   }
 
 

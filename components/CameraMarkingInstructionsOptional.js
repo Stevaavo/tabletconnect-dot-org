@@ -41,7 +41,7 @@ export default class Home extends React.Component {
         }
     });
 
-    logEvent("choice", "cameraMarkInstructions", (!falseButton).toString() )
+    logEvent("cameraMarkInstructions", (!falseButton).toString() )
   }
 
 

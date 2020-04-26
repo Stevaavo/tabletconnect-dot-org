@@ -41,7 +41,7 @@ export default class Home extends React.Component {
         }
     });
 
-    logEvent("choice", "fbMessengerInstructions", (!falseButton).toString() )
+    logEvent("fbMessengerInstructions", (!falseButton).toString() )
   }
 
 

@@ -40,7 +40,7 @@ export default class Home extends React.Component {
         }
     });
     
-    logEvent("choice", name, (!falseButton).toString() )
+    logEvent(name, (!falseButton).toString() )
   }
 
 
@@ -58,7 +58,7 @@ export default class Home extends React.Component {
     });
 
     
-    logEvent("choice", "carrier", name)
+    logEvent("carrier", name)
   }
 
 

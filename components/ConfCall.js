@@ -41,7 +41,7 @@ export default class Home extends React.Component {
         }
     });
 
-    logEvent("choice", "confCallInstructions", (!falseButton).toString() )
+    logEvent("confCallInstructions", (!falseButton).toString() )
   }
 
 
