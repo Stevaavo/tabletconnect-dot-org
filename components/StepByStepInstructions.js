@@ -25,8 +25,8 @@ export default class Home extends React.Component {
   constructor(props) {
       super(props)
       this.state = {
-        //   cellular: true,
-        //   tabletChosen: "android"
+          cellular: true,
+          tabletChosen: "android"
       }
   }
 
