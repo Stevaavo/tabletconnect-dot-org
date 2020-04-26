@@ -414,6 +414,13 @@ export default class Home extends React.Component {
             <div className="column">
 
                 <div className="content">
+
+                    {!this.state.USA && this.props.techSavvy && <p>
+                        <strong className="highlight">NOTE:</strong> If you live outside the US and can contribute tablet/carrier suggestions for your country 
+                        (see the <a name="USA" onClick={this.handleButtonClick}>US portion of this guide</a> for examples), that would be very much appreciated.
+                        Shoot an email to <TrackedLink href="mailto:volunteers@tabletconnect.org">volunteers@tabletconnect.org</TrackedLink>
+                    </p>}
+
                     <p>
                         I'd suggest calling your phone carrier and purchasing the cheapest Android tablet that they have available. 
                         {/* I recommend against going with an iPad, because iPads and iPhones can't be set up to answer Skype calls automatically, unfortunately. */}
