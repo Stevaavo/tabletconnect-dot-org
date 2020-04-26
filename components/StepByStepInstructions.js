@@ -13,6 +13,7 @@ import OnboardInstructions from '../components/OnboardInstructions'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
 import AppleTestCallInstructions from '../components/AppleTestCallInstructions'
 import FbMessengerInstructions from '../components/FbMessengerInstructions'
+import TeamviewerInstructions from '../components/TeamviewerInstructions'
 // import scrollToComponent from 'react-scroll-to-component'
 // import scrollToComponent from 'ssr-scroll-to'
 
@@ -130,6 +131,12 @@ export default class Home extends React.Component {
         />}
 
         {this.state.tabletChosen != "ipad" && <FbMessengerInstructions
+            techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
+
+        />}
+
+        {this.state.tabletChosen != "ipad" && <TeamviewerInstructions
             techSavvy={this.props.techSavvy} 
             stepNumber={stepNumber++}
 

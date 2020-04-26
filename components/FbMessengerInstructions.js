@@ -169,6 +169,10 @@ export default class Home extends React.Component {
                         <div className="content">
 
                             <p>
+                                This step is recommended, but optional.
+                            </p>
+
+                            <p>
                                 Skype is great, because it can pick up our calls automatically. 
                                 However, some readers of this guide have reported that the Skype app has spontaneously signed itself out on their relative/friend's tablet. 
                                 If you're not there to show your relative/friend how sign back in, it may not be possible to continue using Skype at that point.
