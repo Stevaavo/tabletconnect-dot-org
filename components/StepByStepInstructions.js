@@ -14,6 +14,7 @@ import { initGA, logPageView, logEvent } from '../utils/analytics'
 import AppleTestCallInstructions from '../components/AppleTestCallInstructions'
 import FbMessengerInstructions from '../components/FbMessengerInstructions'
 import TeamviewerInstructions from '../components/TeamviewerInstructions'
+import CameraMarkingInstructionsOptional from '../components/CameraMarkingInstructionsOptional'
 // import scrollToComponent from 'react-scroll-to-component'
 // import scrollToComponent from 'ssr-scroll-to'
 
@@ -130,6 +131,17 @@ export default class Home extends React.Component {
 
         />}
 
+        {this.state.tabletChosen == "ipad" && <AppleTestCallInstructions
+            // techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
+
+        />}
+
+        <MarkingInstructions
+            techSavvy={this.props.techSavvy} 
+            stepNumber={stepNumber++}
+        />
+
         {this.state.tabletChosen != "ipad" && <FbMessengerInstructions
             techSavvy={this.props.techSavvy} 
             stepNumber={stepNumber++}
@@ -142,13 +154,7 @@ export default class Home extends React.Component {
 
         />}
 
-        {this.state.tabletChosen == "ipad" && <AppleTestCallInstructions
-            // techSavvy={this.props.techSavvy} 
-            stepNumber={stepNumber++}
-
-        />}
-
-        <MarkingInstructions
+        <CameraMarkingInstructionsOptional
             techSavvy={this.props.techSavvy} 
             stepNumber={stepNumber++}
         />
