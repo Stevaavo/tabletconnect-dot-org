@@ -76,7 +76,7 @@ export default class Home extends React.Component {
 
     const dataExplanation = <p>
         Your plan might already include unlimited data for the tablet.  Or, you might be asked to choose a plan for the tablet with a limited amount of monthly data.
-        If you need to choose how much data to buy for the tablet, a good rule of thumb is that every gigabyte (GB) of "LTE" data works out 
+        If you need to choose how much data to buy for the tablet, a good rule of thumb is that every gigabyte (GB) of "high speed" (sometimes called "LTE") data works out 
         to roughly 1 hour and 15 minutes of talk-time over video chat.
     </p>
 
@@ -131,7 +131,40 @@ export default class Home extends React.Component {
 
         <div className = "columns is-vcentered">
 
-            <div className="column">
+
+
+            <div className="content">
+
+                <p>
+                    <strong className="highlight">UPDATED 5/3/2020:</strong> If you followed the previous version of the AT&T guide and you are now having trouble activating,
+                    shoot me an email at <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink> and
+                    I'll walk you through the solution.
+                </p>            
+
+                <p>------------------------------------</p>
+
+                <p>
+                    I recommend buying <TrackedLink href="https://www.att.com/buy/tablets/samsung-galaxy-tab-a-8-4-32gb-mocha.html">this tablet</TrackedLink> from {this.state.carrier}.
+                </p>
+
+                <p>
+                    You can buy it and add it to your phone service plan through their website at the link above, or you can call them to arrange the purchase. 
+                    When the tablet arrives, it will already be connected to your {this.state.carrier} plan "out of the box."
+                </p>
+
+                <p>
+                    In most cases, {this.state.carrier} will charge about $20 extra per month to add a tablet to your phone plan.
+                </p>
+
+                {/* {iPadWarning} */}
+
+                {dataExplanation}
+
+                {usbCCableRecommendation}
+
+            </div>
+
+            {/* <div className="column">
 
                 <div className="content">
 
@@ -161,16 +194,16 @@ export default class Home extends React.Component {
 
                     {microUsbCableRecommendation}
 
-                </div>
+                </div> */}
 
-                <div className="content">
+                {/* <div className="content"> */}
 
-                    <p>
+                    {/* <p>
                         Alternatively, if you would like to stick with AT&T in spite of the higher tablet cost, I recommend 
                         purchasing <TrackedLink href="https://www.att.com/buy/tablets/samsung-galaxy-tab-s5e-64gb-black.html">this $479 tablet</TrackedLink>. 
                         In that case, if you want a longer charging cable, it will need to be a "USB-C" type cable.  
                         I recommend <TrackedLink href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this $13.99 10-foot USB-C cable</TrackedLink>.
-                    </p>
+                    </p> */}
 
 
 
@@ -220,9 +253,9 @@ export default class Home extends React.Component {
 
                     {microUsbCableRecommendation} */}
 
-                </div>
+                {/* </div> */}
 
-            </div>
+            {/* </div> */}
 
             <div className="column is-one-third">
                 <div className="columns is-centered">
