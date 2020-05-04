@@ -62,21 +62,63 @@ export default class Home extends React.Component {
   }
 
 
+  handleCountryClick = (event) => {
+    event.preventDefault()
+
+    const target = event.target;
+    //   const value = target.type === 'checkbox' ? target.checked : target.value;
+    let name = target.name;
+  
+    this.setState( (prevState) => {
+        return {
+            country: name
+        }
+    });
+
+    
+    logEvent("country", name)
+  }
+
+
   
 
   render() {
 
-    if (this.state.carrier || this.state.USA == false) {
+    if (this.state.carrier || (this.state.country && this.state.country != "the US")) {
         this.props.tabletChosen("android")
     }
+    
+
+    const internationalTabletList = {
+        "the UK": "https://www.amazon.co.uk/Samsung-Galaxy-Tab-LTE-Inch/dp/B07W6QCP89?th=1",
+        "Canada": "https://www.amazon.ca/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G",
+        "Australia": "https://www.amazon.com.au/Samsung-Galaxy-2019-SM-T295-Wi-Fi/dp/B082KCC6CW/ref=sr_1_2?keywords=samsung+tab+a+lte&qid=1588551262&sr=8-2",
+        "Germany": "https://www.amazon.de/Samsung-Galaxy-Tab-32-Schwarz/dp/B07QC44PHL",
+    }
+
+    
+    const internationalAlternative = <p>
+            Alternatively, you can purchase <TrackedLink href={internationalTabletList[this.state.country]}>this tablet</TrackedLink> from Amazon in {this.state.country}.
+            It should be possible to purchase a SIM card with a service plan for this tablet from your carrier, or you could choose to purchase a data plan a different carrier. 
+            It may be a little more difficult to get it activated as opposed to a tablet purchased directly from the carrier, but you can shoot us an email if you have any trouble.
+        </p>
+
+
+    const oldAndroidWarning = <p>
+        To save some money, you could also choose to purchase a used 4G tablet from a marketplace like 
+        eBay. {this.state.country == "the US" &&  "These can often be found for $100 or less."} If 
+        you go this route, make sure to purchase a relatively new model of tablet (ideally released in the past 3 years), 
+        because the Skype app does not have the ability to start video by default on incoming calls if your tablet is using an older version of Android. 
+        {this.state.country == "the US" &&  " You should also make sure the tablet is compatible with your carrier. If you're not sure how to check for that, drop us an email and we can help."}
+    </p>
 
     const iPadWarning = <p>
         <strong className="highlight">Heads Up:</strong> I recommend against going with an iPad, because iPads and iPhones can't be set up to answer Skype calls automatically.
     </p>
 
     const dataExplanation = <p>
-        Your plan might already include unlimited data for the tablet.  Or, you might be asked to choose a plan for the tablet with a limited amount of monthly data.
-        If you need to choose how much data to buy for the tablet, a good rule of thumb is that every gigabyte (GB) of "high speed" (sometimes called "LTE") data works out 
+        {/* Your plan might already include unlimited data for the tablet.  Or, you might be asked to choose a plan for the tablet with a limited amount of monthly data. */}
+        If you need to choose how much monthly data to buy for the tablet when you set up its cellular plan, a good rule of thumb is that every gigabyte (GB) of "high speed" (sometimes called "LTE") data works out 
         to roughly 1 hour and 15 minutes of talk-time over video chat.
     </p>
 
@@ -106,17 +148,19 @@ export default class Home extends React.Component {
         </p>
     </div>
     
-    const unknownCableRecommendation = <div>
+    const unknownCableRecommendation = <div className="content">
         <p>
             Most tablets will come with a charging cable that is about 4 feet long.  Depending on your relative/friend's needs, you might want to buy an extra-long cable, so that the 
             device can charge in whatever spot would be most convenient for them to see/hear/reach it.
         </p>
 
-        {this.state.USA && <p>
+        {this.state.country == "the US" && <p>
             If your tablet has a USB-C charging port, <TrackedLink href="https://www.amazon.com/Anker-Powerline-Double-Braided-Charging-Samsung/dp/B07VWLLBP1">this USB-C cable</TrackedLink> is a good choice.  
             Or if it has a microUSB charging port, I recommend <TrackedLink href="https://www.amazon.com/gp/product/B0763358FV">this microUSB cable</TrackedLink>. 
             If you're not sure what type of charging port your tablet has, you can buy both, or you can email us and we'll help you figure it out.
         </p>}
+
+        {/* <br /> */}
     </div>
     
 
@@ -433,6 +477,9 @@ export default class Home extends React.Component {
 
         </div>
     </div>
+
+
+
     
 
 
@@ -448,27 +495,34 @@ export default class Home extends React.Component {
 
                 <div className="content">
 
-                    {!this.state.USA && this.props.techSavvy && <p>
-                        <strong className="highlight">NOTE:</strong> If you live outside the US and can contribute tablet/carrier suggestions for your country 
-                        (see the <a name="USA" onClick={this.handleButtonClick}>US portion of this guide</a> for examples), that would be very much appreciated.
-                        Shoot an email to <TrackedLink href="mailto:volunteers@tabletconnect.org">volunteers@tabletconnect.org</TrackedLink> for more details.
-                    </p>}
-
                     <p>
                         I'd suggest calling your phone carrier and purchasing the cheapest Android tablet that they have available. 
-                        {/* I recommend against going with an iPad, because iPads and iPhones can't be set up to answer Skype calls automatically, unfortunately. */}
-                    </p>
-
-                    <p>
                         If you're not sure what to choose, or if your carrier doesn't sell tablets, feel free to shoot us an email at <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink>.  
                         Tell us which carrier you are using, and we'll find a good option for you.
                     </p>
+
+                    {this.state.country != "the US" && this.state.country != "your country" && internationalAlternative}
+
+                    {this.state.country == "the US" && <p>
+                        Alternatively, you can get <TrackedLink href="https://prepaid.t-mobile.com/product-details/alcatel-joy-tab/Metallic%20Black">this $168 tablet</TrackedLink> from 
+                        T Mobile Prepaid instead, on a separate cellular plan provided by T Mobile Prepaid.  
+                        They have data plans that start at $10/month for 2 GB of high-speed data, going up to $50/month for unlimited data.
+                    </p>}
+
+                    {this.props.techSavvy && oldAndroidWarning}
 
                     {iPadWarning}
 
                     {dataExplanation}
 
                     {unknownCableRecommendation}
+
+                    {this.state.country != "the US" && this.props.techSavvy && <p>
+                        <strong className="highlight">NOTE:</strong> I'd love to find a volunteer from {this.state.country} to help me flesh out this part of 
+                        the guide with specific tablet/carrier suggestions (like we have in 
+                        the <a name="the US" onClick={this.handleCountryClick}>US portion of this guide</a>).
+                        Email <TrackedLink href="mailto:volunteers@tabletconnect.org">volunteers@tabletconnect.org</TrackedLink> if you're interested in pitching in. 😀
+                    </p>}
 
                 </div>
 
@@ -490,6 +544,8 @@ export default class Home extends React.Component {
 
         </div>
     </div>
+
+
 
 
 
@@ -554,25 +610,41 @@ export default class Home extends React.Component {
 
             <br />
 
-            <h1 className="title is-size-4">Are you in the United States?</h1>
+            <h1 className="title is-size-4">Where are you located?</h1>
 
             <br />
 
             <div className="columns is-centered">
-                <div className="column is-one-third">
-                    <button name="USA" disabled={this.state.USA == true} className={`button is-medium is-success`} onClick={this.handleButtonClick}>Yes</button>
+                <div className="column">
+                    <button name="the US" disabled={this.state.country == "the US"} className={`button is-medium is-success`} onClick={this.handleCountryClick}>United States</button>
+                </div>
+
+                <div className="column">
+                    <button name="Canada" disabled={this.state.country == "Canada"} className={`button is-medium is-success`} onClick={this.handleCountryClick}>Canada</button>
                 </div>
                 
-                <div className="column is-one-third">
-                    <button name="NOTUSA" disabled={this.state.USA == false} className={`button is-medium is-success`} onClick={this.handleButtonClick}>No</button>
+                <div className="column">
+                    <button name="the United Kingdom" disabled={this.state.country == "the United Kingdom"} className={`button is-medium is-success`} onClick={this.handleCountryClick}>United Kingdom</button>
+                </div>
+                
+                <div className="column">
+                    <button name="Australia" disabled={this.state.country == "Australia"} className={`button is-medium is-success`} onClick={this.handleCountryClick}>Australia</button>
+                </div>
+                
+                <div className="column">
+                    <button name="Germany" disabled={this.state.country == "Germany"} className={`button is-medium is-success`} onClick={this.handleCountryClick}>Germany</button>
+                </div>
+                
+                <div className="column">
+                    <button name="your country" disabled={this.state.country == "your country"} className={`button is-medium is-success`} onClick={this.handleCountryClick}>Other</button>
                 </div>
             </div>
 
         </div>
 
-        {this.state.USA == true && whichCarrier}
+        {this.state.country == "the US" && whichCarrier}
 
-        {this.state.USA == false && otherCarrier}
+        {this.state.country && this.state.country != "the US" && otherCarrier}
 
 
 
