@@ -90,7 +90,7 @@ export default class Home extends React.Component {
     
 
     const internationalTabletList = {
-        "the UK": "https://www.amazon.co.uk/Samsung-Galaxy-Tab-LTE-Inch/dp/B07W6QCP89?th=1",
+        "the United Kingdom": "https://www.amazon.co.uk/Samsung-Galaxy-Tab-LTE-Inch/dp/B07W6QCP89?th=1",
         "Canada": "https://www.amazon.ca/Samsung-Cellular-Unlocked-SM-T295-International/dp/B07XC3CW4G",
         "Australia": "https://www.amazon.com.au/Samsung-Galaxy-2019-SM-T295-Wi-Fi/dp/B082KCC6CW/ref=sr_1_2?keywords=samsung+tab+a+lte&qid=1588551262&sr=8-2",
         "Germany": "https://www.amazon.de/Samsung-Galaxy-Tab-32-Schwarz/dp/B07QC44PHL",
