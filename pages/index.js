@@ -104,8 +104,9 @@ export default class Home extends React.Component {
                 </p>
 
                 <p className="subtitle is-size-6-mobile">
-                  Our guide will walk you through the process of buying and setting up a dedicated <strong className="highlight">video-chat tablet</strong> that you can mail to a loved one.
-                  I originally set up a tablet like this for my grandmother, who has been cut off from visitors by the crisis.
+                  This guide will walk you through the process of choosing a tablet and re-purposing it into an ultra-simple "<strong className="highlight">video phone</strong>"
+                  that you can mail to a loved one.
+                  I originally set up a tablet like this for my 96-year-old grandmother, who has been cut off from visitors by the crisis.
                 </p>
 
                 {/* <p className="subtitle is-size-6-mobile">
