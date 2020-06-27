@@ -16,7 +16,7 @@ export default class Home extends React.Component {
         super(props)
         this.state = {
             // techSavvy: true,
-            // verySavvy: true,
+            verySavvy: true,
         }
     }
 
@@ -115,63 +115,26 @@ export default class Home extends React.Component {
         <div className={`${ !optionChosen  && "hero-body"}`}>
             <div className="container has-text-centered">
 
-                <h1 className="title" ref={(thisComponent) => { this.question = thisComponent; }} >How would you rate your level of technical expertise?</h1>
+                <h1 className="title" ref={(thisComponent) => { this.question = thisComponent; }} >How would you describe yourself?</h1>
 
                 <br />
 
-                <button name="NOTtechSavvy" disabled={this.state.techSavvy == false} className={`button is-large is-success`} onClick={this.handleButtonClick}>Beginner</button>
-
-                <br />
-
-                <br />
-
-                <button name="techSavvy" disabled={this.state.techSavvy == true} className={`button is-large is-success`} onClick={this.handleButtonClick}>Intermediate</button>
-
-                <br />
-
-                <br />
-
-                <button disabled={this.state.verySavvy == true} className={`button is-large is-success`} onClick={this.handleVerySavvyClick}>Expert</button>
-
-                {/* <br />
-
-                <br /> */}
-
-
-
-
-
-                {/* <div>
-                    <button name="NOTtechSavvy" disabled={this.state.techSavvy == false} className={`button is-large is-success`} onClick={this.handleButtonClick}>Beginner</button>
-
-                </div>
-
-                <div>
-                    <button name="techSavvy" disabled={this.state.techSavvy == true} className={`button is-large is-success`} onClick={this.handleButtonClick}>Intermediate</button>
-
-                </div>
-
-                <div>
-                    <button disabled={this.state.verySavvy == true} className={`button is-large is-success`} onClick={this.handleVerySavvyClick}>Expert</button>
-
-                </div> */}
-
-                {/* <div className="columns is-centered">
+                <div className="columns is-centered">
                     
                     <div className="column is-one-third">
-                        <button name="NOTtechSavvy" disabled={this.state.techSavvy == false} className={`button is-large is-success`} onClick={this.handleButtonClick}>Beginner</button>
+                        <button name="NOTtechSavvy" disabled={this.state.techSavvy == false} className={`button is-large is-success`} onClick={this.handleButtonClick}>Not very tech-savvy</button>
                     </div>
 
                     <div className="column is-one-third">
-                        <button name="techSavvy" disabled={this.state.techSavvy == true} className={`button is-large is-success`} onClick={this.handleButtonClick}>Intermediate</button>
+                        <button name="techSavvy" disabled={this.state.techSavvy == true} className={`button is-large is-success`} onClick={this.handleButtonClick}>Moderately tech-savvy</button>
                     </div>
 
                     <div className="column is-one-third">
-                        <button disabled={this.state.verySavvy == true} className={`button is-large is-success`} onClick={this.handleVerySavvyClick}>Expert</button>
+                        <button disabled={this.state.verySavvy == true} className={`button is-large is-success`} onClick={this.handleVerySavvyClick}>Very tech-savvy</button>
                     </div>
 
 
-                </div> */}
+                </div>
 
             </div>
             
