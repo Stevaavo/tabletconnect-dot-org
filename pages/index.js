@@ -83,7 +83,7 @@ export default class Home extends React.Component {
 
                   <p>
                     No need to teach the senior how to use any technology. 
-                    This guide will show you how to configure the tablet to <span className="highlight">automatically pick up</span> when you 
+                    This guide will show you how to configure a tablet to <span className="highlight">automatically pick up</span> when you 
                     initiate a video-call over Skype or Facetime.
                   </p>
 
@@ -218,6 +218,17 @@ export default class Home extends React.Component {
 
         </div>
       </section>
+
+      {/* <section className="section">
+        <div className="container">
+          <div className="content has-text-centered">
+            <h1 className="logo-font">Read about us at...</h1>
+
+
+          </div>
+        </div>
+        
+      </section> */}
 
       <Footer />
 
