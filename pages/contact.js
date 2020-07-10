@@ -52,8 +52,8 @@ export default class Home extends React.Component {
                     <br className="is-hidden-mobile"/>
 
                     <p className="subtitle is-size-6-mobile">
-                        Having trouble setting up your tablet?  Feel free to email <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink> for assistance, 
-                        or to request a support phone call.  This is provided on a volunteer basis.
+                        Having trouble setting up your tablet?  Feel free to email <TrackedLink href="mailto:help@tabletconnect.org">help@tabletconnect.org</TrackedLink> for assistance
+                        from a volunteer.
                     </p>
 
                     <p className="subtitle is-size-6-mobile">

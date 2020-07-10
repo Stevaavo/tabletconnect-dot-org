@@ -64,55 +64,40 @@ export default class Home extends React.Component {
 
               <div className="column is-half">
 
+                {/* <p className="title is-size-5-mobile">Video-chat a parent/grandparent, without asking them to learn any technology.</p> */}
 
-                {/* <p className="title is-size-5-mobile">
-                  TabletConnect.org is a volunteer-run online guide that will help you set up an iPad or tablet for a senior that has become isolated due to COVID.
-                </p> */}
+                {/* <p className="title is-size-5-mobile">The tablet will pick up calls <strong className="highlight">automatically</strong>.  No need for your relative to tap anything.</p> */}
+                
+                {/* <p className="title is-size-5-mobile">Send your parent/grandparent a tablet that will pick up your video calls automatically.</p>
+                <p className="title is-size-5-mobile">No need for them to tap anything, or learn any technology.</p> */}
+
+
+
+                {/* <p className="subtitle is-size-6-mobile">Unable to visit a parent/grandparent due to COVID?</p>
+                <br className="is-hidden-mobile"/>
+
+                <p className="title is-size-5-mobile">Get them onto video chat, without asking them to learn any technology.</p> */}
+
+                <p className="title is-size-5-mobile">Give a senior citizen access to video-chat, <strong className="highlight">without asking them to learn any technology.</strong></p>
+
+                {/* <p className="title is-size-5-mobile">They just need to plug it in.</p> */}
+
+                {/* <p className="title is-size-5-mobile"><strong className="highlight">Video chat</strong> with parents/grandparents under COVID lockdown.</p> */}
+
+                {/* <p className="title is-size-5-mobile">Get them onto video-chat, without asking them to learn any new technology.</p> */}
+
+                {/* <p className="title is-size-5-mobile">Video-chat senior relatives, without asking them to learn anything new.</p> */}
 
                 <br className="is-hidden-mobile"/>
 
-                {/* <p className="subtitle is-size-6-mobile">This website will walk you through the process of:</p> */}
+                {/* <p className="subtitle is-size-6-mobile">Many of us are no longer able to visit older relatives due to the risk of COVID.</p> */}
+                
 
-                <div className="content is-size-5">
+                {/* <p className="subtitle is-size-6-mobile">Video chat has allowed many of us to maintain close ties with friends and family in spite of the coronavirus.  However,
+                many senior citizens don't have the devices or technical knowledge to participate in video calls.</p> */}
 
-                  {/* <h3>Hello!</h3> */}
-
-                  <h3>
-                    This is a volunteer-run guide that will help you set up a tablet for an elder isolated by COVID.
-                  </h3>
-
-                  <p>
-                    No need to teach the senior how to use any technology. 
-                    This guide will show you how to configure the tablet to <span className="highlight">automatically pick up</span> when you 
-                    initiate a video-call over Skype or Facetime.
-                  </p>
-
-                  <p>
-                    <span className="highlight">No WiFi required</span>. This guide will help you buy a tablet from your wireless carrier that 
-                    connects to the internet over the cellular network.
-                  </p>
-
-                  <p>
-                    When you've finished preparing the tablet, you can <span className="highlight">mail it</span> to the elder, 
-                    and <span className="highlight">all they have to do is turn it on and plug in the charger.</span>
-                  </p>
-
-                  <p>
-                    If you have any trouble, you can reach out to 
-                    our <Link  href="/support">
-                      <a>
-                        volunteer tech support
-                      </a>
-                    </Link> for help.
-                  </p>
-
-                </div>
-
-
-
-
-
-                {/* <p className="title is-size-5-mobile">Give a senior citizen access to video-chat, <strong className="highlight">without asking them to learn any technology.</strong></p>
+                {/* <p className="subtitle is-size-6-mobile">Video chat has allowed many of us to maintain close ties with friends and family in spite of the coronavirus.  However,
+                many senior citizens don't have a phone or computer, or the technical skill to use one for a video call.</p> */}
 
                 <p className="subtitle is-size-6-mobile">
                   Hello!  This is a volunteer project intended to help families that have become isolated from older loved ones due to the coronavirus crisis.
@@ -123,6 +108,11 @@ export default class Home extends React.Component {
                   that you can mail to an elder.
                   I originally set up a tablet like this for my 96-year-old grandmother, who has been cut off from visitors by the crisis.
                 </p>
+
+                {/* <p className="subtitle is-size-6-mobile">
+                  I originally set up a tablet like this for my grandmother, who has been cut off from visitors due to the coronavirus crisis. 
+                  It's worked very well for her, so I've written this guide on a volunteer basis to help others do the same.
+                </p> */}
 
                 <p className="subtitle is-size-6-mobile">
                   The tablet will <strong className="highlight">automatically pick up Skype video calls</strong> from 
@@ -139,17 +129,17 @@ export default class Home extends React.Component {
                       volunteer tech support
                     </a>
                   </Link> for help.
-                </p> */}
+                </p>
 
 
+                {/* <p className="subtitle is-size-6-mobile"></p> */}
+                {/* <p className="subtitle is-size-6-mobile">You can give the person's Skype name to other friends and relatives, so that they can video-call the tablet as well.</p> */}
+                {/* <p className="subtitle is-size-6-mobile">I originally set up a tablet like this for my grandmother, who has been cut off from visitors for several weeks now
+                due to the crisis.</p> */}
 
-
-                
-
-                <br />
 
                 <Link  href="/instructions">
-                  <button className="button is-fullwidth is-success is-large">
+                  <button className="button is-fullwidth is-success">
                     <span className="icon">
                         <i className="fas fa-book-open"></i>
                     </span>
@@ -159,17 +149,6 @@ export default class Home extends React.Component {
                   </button>
                 </Link>
 
-                <br />
-
-                <div className="content has-text-centered">
-                  <p>...or, <Link  href="/support">
-                      <a>
-                        get help from a volunteer
-                      </a>
-                    </Link>.</p>
-                </div>
-
-                {/* <br />
                 <br />
                 
                 <Link  href="/support">
@@ -187,14 +166,17 @@ export default class Home extends React.Component {
 
                 <Link  href="/volunteer">
                   <button className="button is-fullwidth is-info">
+                    {/* <span className="icon">
+                        <i className="fas fa-hands-helping"></i>
+                    </span> */}
                     <span>
                       😇 Volunteer to Give Tech Support to Others
                     </span>
                   </button>
-                </Link> */}
+                </Link>
 
-              
-              </div>
+                
+                </div>
 
 
               {/* <div className="column">
