@@ -170,7 +170,7 @@ export default class Home extends React.Component {
                   
 
                   <p>
-                    <video autoPlay muted loop id="myVideo-mobile">
+                    <video autoPlay playsInline muted loop controls id="myVideo-mobile">
                       <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
                     </video>
                   </p>
@@ -179,7 +179,7 @@ export default class Home extends React.Component {
 
               <div className="column has-text-centered is-hidden-mobile">
                 <p>
-                  <video autoPlay muted loop id="myVideo-desktop">
+                  <video autoPlay playsInline muted loop id="myVideo-desktop">
                     <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
                   </video>
                 </p>
