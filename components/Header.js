@@ -68,7 +68,7 @@ export default class Header extends React.Component {
                                             <Link href="/instructions">
                                                 <a className="button is-success">
                                                     <span className="icon">
-                                                        <i className="fas fa-book-open"></i>
+                                                        <i className="fas fa-book-open"/>
                                                     </span>
                                                     <span>
                                                         Instructions
