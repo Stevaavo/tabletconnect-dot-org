@@ -32,6 +32,7 @@ export default class Header extends React.Component {
         
             <NextHead>
                 {title && <title>{title}</title>}
+                {this.props.description && <meta name="description" content={this.props.description} />}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
                 <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet" />

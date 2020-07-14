@@ -194,7 +194,7 @@ export default class Home extends React.Component {
     console.log("State as of render: ", this.state)
     return <div>
 
-        <Header title="Instructions" />
+        <Header title="Instructions" description="A volunteer-written online guide that will help you set up a tablet for an elder isolated by COVID." />
 
         {techSavvyQuestion}
 
