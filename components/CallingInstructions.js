@@ -18,12 +18,6 @@ export default class Home extends React.Component {
       }
   }
 
-  static getInitialProps(contextObject) {
-      return {
-          query: contextObject.query
-      }
-  }
-
   handleButtonClick = (event) => {
     event.preventDefault()
 
