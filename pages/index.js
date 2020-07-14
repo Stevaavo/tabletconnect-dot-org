@@ -160,8 +160,8 @@ export default class Home extends React.Component {
 
               <div className="column has-text-centered is-hidden-tablet">
 
-                <br />
-                <br />
+                {/* <br />
+                <br /> */}
 
                 <div className="box">
                   <div className="content logo-font">
