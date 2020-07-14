@@ -7,6 +7,15 @@ export default class Header extends React.Component {
 
     constructor(props) {
         super(props)
+        this.state = {}
+    }
+
+    toggleMenu = () => {
+        this.setState( (prevState) => {
+            return {
+                menuOpen: !prevState.menuOpen
+            }
+        })
     }
 
     render() {
@@ -36,24 +45,24 @@ export default class Header extends React.Component {
                             <Link href="/">
                                 <a className="navbar-item logo-font title" >
                                     <span className="is-hidden-mobile">TabletConnect.org</span>
-                                    <span className="is-hidden-tablet">TabletConnect</span> {/* This shorter title is shown on mobile devices */}
+                                    <span className="is-hidden-tablet is-size-4">TabletConnect</span> {/* This shorter title is shown on mobile devices */}
                                 </a>
                             </Link>
+
+                            <a role="button" onClick={this.toggleMenu} className={`navbar-burger ${this.state.menuOpen && "is-active"}`} aria-label="menu" aria-expanded="false">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
                         </div>
-                        <div className="navbar-menu">
+                        <div className={`navbar-menu ${this.state.menuOpen && "is-active"}`}>
                             <div className="navbar-start">
                                 {/* <a className="navbar-item has-text-weight-bold">Test</a> */}
                             </div>
-                            <div className="navbar-end">
-
-
-
-
 
                             <div className="navbar-end">
                                 <div className="navbar-item">
-                                    <div className="field is-grouped">
-                                        <p className="control">
+
 
                                             <Link href="/instructions">
                                                 <a className="button is-success">
@@ -65,18 +74,20 @@ export default class Header extends React.Component {
                                                     </span>
                                                 </a>
                                             </Link>
-                                        </p>
-                                        <p className="control">
+
+                                </div>
+
+                                
+                                <div className="navbar-item">
+
                                             <Link href="support">
-                                                <a className="button is-link" href="mailto:help@tabletconnect.org">
+                                                <a className="button is-link">
                                                     <span className="icon">
                                                         <i className="fas fa-hands-helping"></i>
                                                     </span>
                                                     <span>Tech Support (Volunteer)</span>
                                                 </a>
                                             </Link>
-                                        </p>
-                                    </div>
                                 </div>
 
                                 <div className="navbar-item">
@@ -86,7 +97,6 @@ export default class Header extends React.Component {
                                         </a>
                                     </Link>
                                 </div>
-                            </div>
 
 
 
