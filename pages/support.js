@@ -19,11 +19,11 @@ export default class Home extends React.Component {
       this.state = {}
   }
 
-  static getInitialProps(contextObject) {
-      return {
-          query: contextObject.query
-      }
-  }
+  // static getInitialProps(contextObject) {
+  //     return {
+  //         query: contextObject.query
+  //     }
+  // }
 
 
   componentDidMount () {
