@@ -40,19 +40,17 @@ export default class Home extends React.Component {
     console.log("State as of render: ", this.state)
     return <div>
 
-      <Header description="A volunteer-written online guide that will help you set up a tablet for an elder isolated by COVID."/>
+      {/* <Header description="A volunteer-written online guide that will help you set up a tablet for an elder isolated by COVID."/> */}
 
       {/* Welcome!  Click <a href="tool">here</a> for the tool. */}
 
-      <section className="hero is-fullheight-with-navbar animated fadeIn">
+      <section className="hero is-fullheight-with-navbar">
 
-        {/* <div className="hero-head">
-          <div className="container">
-            Test
-          </div>
-        </div> */}
+        <div className="hero-head">
+          <Header description="A volunteer-written online guide that will help you set up a tablet for an elder isolated by COVID."/>
+        </div>
 
-        <div className="hero-body">
+        <div className="hero-body animated fadeIn">
           <div className="container">
             <div className = "columns is-vcentered is-centered">
 
@@ -186,15 +184,18 @@ export default class Home extends React.Component {
               </div>
 
             </div>
+
+            {/* <div className="content has-text-centered is-size-2 is-hidden-mobile">
+              ↓  ↓  ↓  ↓
+            </div> */}
+
           </div>
 
         </div>
 
-        <div className="hero-foot is-hidden-mobile">
+        <div className="hero-foot is-hidden-mobile animated fadeIn">
           <div className="container">
             <div className="content has-text-centered is-size-2">
-              {/* ⇊   ⇊   ⇊   ⇊   ⇊   ⇊   ⇊   ⇊   ⇊ */}
-
               ↓  ↓  ↓  ↓
             </div>
           </div>

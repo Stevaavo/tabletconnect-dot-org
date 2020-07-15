@@ -10,6 +10,16 @@ const component = () => {
                 <strong className="has-text-grey-light">TabletConnect.org</strong> - built by Steve Trambert
             </p>
 
+            
+
+            <TrackedLink href="https://www.vercel.com/?utm_source=tabletconnect-dot-org">
+                <img src="/static/powered-by-vercel.svg"  />
+            </TrackedLink>
+
+            <br />
+
+            <br />
+
 
             {/* <Link  href="/support">
                   <button className="button is-link">
@@ -24,11 +34,9 @@ const component = () => {
 
             {/* <p className="has-text-grey-light">Dedicated to the memory of Maxima Trambert</p> */}
 
+            {/* <p className="has-text-grey-light">Dedicated to Maxima Trambert: immigrant, scientist, chemistry teacher, snowbird, loving mother, and one inspiring BAMF of a grandma. 😎</p>
+            <p className="has-text-grey-light">May her memory be a blessing.</p> */}
             {/* <p className="has-text-grey-light">Special thanks to Vercel for their sponsorship</p> */}
-
-            <TrackedLink href="https://www.vercel.com/?utm_source=tabletconnect-dot-org">
-                <img src="/static/powered-by-vercel.svg"  />
-            </TrackedLink>
             
 
 
