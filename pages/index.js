@@ -245,7 +245,7 @@ export default class Home extends React.Component {
               <style jsx>{`
 
                 img {
-                  border: 1px dashed black;
+                  border: 1px dashed lightGrey;
                   border-radius: 15px;
                   padding: 3px;
                 }
