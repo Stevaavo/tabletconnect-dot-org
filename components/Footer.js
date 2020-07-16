@@ -10,6 +10,10 @@ const component = () => {
                 <strong className="has-text-grey-light">TabletConnect.org</strong> - built by Steve Trambert
             </p>
 
+            <p>
+                Special thanks to Vercel for their charitable sponsorship.
+            </p>
+
             
 
             <TrackedLink href="https://www.vercel.com/?utm_source=tabletconnect-dot-org">

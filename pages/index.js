@@ -144,12 +144,35 @@ export default class Home extends React.Component {
 
                 <br />
 
-                <div className="content has-text-centered">
+                {/* <div className="content has-text-centered">
                   <p>...or, <Link  href="/support">
                       <a>
                         get help from a volunteer
                       </a>
                     </Link>.</p>
+                </div> */}
+
+                <div className="columns is-centered is-vcentered is-mobile">
+                  <div className="column">
+                    <div className="content is-size-2 has-text-right">
+                      <p>↓</p>
+                    </div>
+                  </div>
+
+
+                  <div className="column">
+                    <div className="content has-text-centered">
+                      <p>...or, read more about us below</p>
+                    </div>
+                  </div>
+
+                  
+                  <div className="column">
+                    <div className="content is-size-2 has-text-left">
+                      <p>↓</p>
+                    </div>
+                  </div>
+                  
                 </div>
 
               
@@ -193,13 +216,13 @@ export default class Home extends React.Component {
 
         </div>
 
-        <div className="hero-foot is-hidden-mobile animated fadeIn">
+        {/* <div className="hero-foot is-hidden-mobile animated fadeIn">
           <div className="container">
             <div className="content has-text-centered is-size-2">
               ↓  ↓  ↓  ↓
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
 
@@ -221,10 +244,20 @@ export default class Home extends React.Component {
 
               <style jsx>{`
 
+                img {
+                  border: 1px dashed black;
+                  border-radius: 15px;
+                  padding: 3px;
+                }
+
                 @media (min-width: 450px) {
                   .heavier-margin {
                     margin: 3%;
                     width: 94%;
+                  }
+
+                  img {
+                    padding: 15px;
                   }
                 }
                 
@@ -235,10 +268,12 @@ export default class Home extends React.Component {
           </div>
 
         </div>
-        
+
+        <br />
+{/*         
       </section>
 
-      <section className="section">
+      <section className="section"> */}
         <div className="container">
           <br />
 
