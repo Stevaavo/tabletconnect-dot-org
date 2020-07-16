@@ -160,7 +160,7 @@ export default class Home extends React.Component {
                   </div>
 
 
-                  <div className="column">
+                  <div className="column is-three-fifths">
                     <div className="content has-text-centered">
                       <p>...or, read more about us below</p>
                     </div>
