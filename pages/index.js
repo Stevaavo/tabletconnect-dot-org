@@ -40,15 +40,15 @@ export default class Home extends React.Component {
     console.log("State as of render: ", this.state)
     return <div>
 
-      {/* <Header description="A volunteer-written online guide that will help you set up a tablet for an elder isolated by COVID."/> */}
+      <Header description="A volunteer-written online guide that will help you set up a tablet for an elder isolated by COVID."/>
 
       {/* Welcome!  Click <a href="tool">here</a> for the tool. */}
 
-      <section className="hero is-fullheight-with-navbar">
+      <section className="hero">
 
-        <div className="hero-head">
+        {/* <div className="hero-head">
           <Header description="A volunteer-written online guide that will help you set up a tablet for an elder isolated by COVID."/>
-        </div>
+        </div> */}
 
         <div className="hero-body animated fadeIn">
           <div className="container">
@@ -162,7 +162,7 @@ export default class Home extends React.Component {
 
                   <div className="column is-three-fifths">
                     <div className="content has-text-centered">
-                      <p>...or, read more about us below</p>
+                      <p>Read more below</p>
                     </div>
                   </div>
 
@@ -179,10 +179,7 @@ export default class Home extends React.Component {
               </div>
 
 
-              <div className="column has-text-centered is-hidden-tablet">
-
-                {/* <br />
-                <br /> */}
+              {/* <div className="column has-text-centered is-hidden-tablet">
 
                 <div className="box">
                   <div className="content logo-font">
@@ -196,12 +193,21 @@ export default class Home extends React.Component {
                     </video>
                   </p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="column has-text-centered is-hidden-mobile">
+              <div className="column has-text-centered">
+
+                <div className="content logo-font is-hidden-tablet">
+                  <h1>How it looks in action:</h1>
+                </div>
+
                 <p>
-                  <video autoPlay playsInline muted loop id="myVideo-desktop">
+                  <video autoPlay playsInline muted loop id="myVideo-desktop" className="is-hidden-mobile">
                     <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
+                  </video>
+
+                  <video autoPlay playsInline muted loop controls id="myVideo-mobile" className="is-hidden-tablet">
+                      <source src="/static/frontpageClipMed2.mp4" type="video/mp4" />
                   </video>
                 </p>
               </div>
@@ -227,88 +233,78 @@ export default class Home extends React.Component {
 
 
 
-      <section className="section">
+      <section className="hero is-light">
         <div className="container">
 
-          <div className="box">
+          <br/>
 
-            <div className="content has-text-centered">
-              <h1 className="logo-font">The impact:</h1>
-            </div>
+          {/* <div className="content has-text-centered">
+            <h1 className="logo-font">The impact:</h1>
+          </div> */}
 
-            <div className="content has-text-centered">
+          {/* <div className="content has-text-centered"> */}
 
-              <img src="/static/testimonial.png" className="heavier-margin is-hidden-touch"/>
+            <blockquote className="blockquote">
+              <p>
+              My grandmother is in a senior facility and has mild dementia. I can't visit with her, so being able to get her this tablet and video with her has been incredible for us both.
+              </p>
+            </blockquote>
 
-              <img src="/static/testimonial_mobile.png" className="heavier-margin is-hidden-desktop"/>
+            <blockquote className="blockquote">
+              <p>
+              I followed your instructions and got a tablet and data plan set up for my 83 year old grandma. 
+              She has used it for the past 3 months without a hitch and has not had to even touch the tablet during the entire time! Thanks again.
+              </p>
+            </blockquote>            
 
-              <style jsx>{`
+            <blockquote className="blockquote">
+              <p>
+              We set it up for my immuno-compromised 80-yr old mother in law who is feeling extremely isolated. 
+              She cried. She’s talked to several family members now today and got tours of gardens and great grandkids projects. 
+              </p>
+            </blockquote>
 
-                img {
-                  border: 1px dashed lightGrey;
-                  border-radius: 15px;
-                  padding: 3px;
-                }
-
-                @media (min-width: 450px) {
-                  .heavier-margin {
-                    margin: 3%;
-                    width: 94%;
-                  }
-
-                  img {
-                    padding: 15px;
-                  }
-                }
-                
-
-              `}</style>
-
-            </div>
-          </div>
+          {/* </div> */}
 
         </div>
-
-        <br />
-{/*         
       </section>
 
-      <section className="section"> */}
+      <section className="hero">
+
         <div className="container">
           <br />
+          <br />
 
-          <div className="box">
             <div className="content has-text-centered">
               <h1 className="logo-font">Read more about the project at:</h1>
-              <br/>
+              <br className="is-hidden-tablet"/>
             </div>
 
             
 
             <div className="columns is-vcentered">
 
-                <div className="column has-text-centered">
-                  <TrackedLink href="https://hackaday.com/2020/04/25/checking-in-on-relatives-using-old-android-tablets/">
-                    <img src="/static/hackaday_logo_halfsize.png" height="50%"/>
-                  </TrackedLink>
+              <div className="column has-text-centered">
+                <TrackedLink href="https://hackaday.com/2020/04/25/checking-in-on-relatives-using-old-android-tablets/">
+                  <img src="/static/hackaday_logo_halfsize.png" height="50%"/>
+                </TrackedLink>
 
-                  <br className="is-hidden-tablet" />
-                  <br className="is-hidden-tablet" />
-                  <br className="is-hidden-tablet" />
-                </div>
-                
-                <div className="column has-text-centered">
-                  <TrackedLink href="https://www.reddit.com/r/LifeProTips/comments/g263iu/lpt_do_you_have_an_older_relative_who_you_want_to/">
-                    <img src="/static/reddit_logo_halfsize.png" height="50%"/>
-                  </TrackedLink>
-                </div>
+                <br className="is-hidden-tablet" />
+                <br className="is-hidden-tablet" />
+                <br className="is-hidden-tablet" />
+              </div>
+              
+              <div className="column has-text-centered">
+                <TrackedLink href="https://www.reddit.com/r/LifeProTips/comments/g263iu/lpt_do_you_have_an_older_relative_who_you_want_to/">
+                  <img src="/static/reddit_logo_halfsize.png" height="50%"/>
+                </TrackedLink>
+              </div>
 
-                
-                
-            </div>
-
-            <br className="" />
+              
+              
           </div>
+
+          <br className="" />
 
         </div>
         
