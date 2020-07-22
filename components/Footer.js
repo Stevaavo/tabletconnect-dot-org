@@ -20,9 +20,9 @@ const component = () => {
                 <img src="/static/powered-by-vercel.svg"  />
             </TrackedLink>
 
-            <br />
+            {/* <br />
 
-            <br />
+            <br /> */}
 
 
             {/* <Link  href="/support">
