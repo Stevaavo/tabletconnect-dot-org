@@ -38,8 +38,8 @@ const component = () => {
 
             {/* <p className="has-text-grey-light">Dedicated to the memory of Maxima Trambert</p> */}
 
-            {/* <p className="has-text-grey-light">Dedicated to Maxima Trambert: immigrant, scientist, chemistry teacher, snowbird, loving mother, and one inspiring BAMF of a grandma. 😎</p>
-            <p className="has-text-grey-light">May her memory be a blessing.</p> */}
+            {/* <p className="has-text-grey-light">Dedicated to Maxima Trambert: immigrant, scientist, STEM educator, and one inspiring BAMF of a grandma. 😎</p>
+            <p className="has-text-grey-light">זיכרונה לברכה // May her memory be a blessing.</p> */}
             {/* <p className="has-text-grey-light">Special thanks to Vercel for their sponsorship</p> */}
             
 

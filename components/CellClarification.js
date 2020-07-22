@@ -4,6 +4,7 @@ import config from '../config'
 import Link from 'next/link'
 import TrackedLink from '../components/TrackedLink'
 import { initGA, logPageView, logEvent } from '../utils/analytics'
+import UsedTabletHelp from '../components/UsedTabletHelp'
 
 
 export default class Home extends React.Component {
@@ -164,9 +165,9 @@ export default class Home extends React.Component {
 
     const att = <div className="animated fadeIn">
 
+        {/* <br />
         <br />
-        <br />
-        <br />
+        <br /> */}
 
         <div className = "columns is-vcentered">
 
@@ -319,9 +320,9 @@ export default class Home extends React.Component {
 
     const tmobile = <div className="animated fadeIn">
 
+        {/* <br />
         <br />
-        <br />
-        <br />
+        <br /> */}
 
         <div className = "columns is-vcentered">
 
@@ -371,9 +372,9 @@ export default class Home extends React.Component {
 
     const verizon = <div className="animated fadeIn">
 
+        {/* <br />
         <br />
-        <br />
-        <br />
+        <br /> */}
 
         <div className = "columns is-vcentered">
 
@@ -424,9 +425,9 @@ export default class Home extends React.Component {
 
     const sprint = <div className="animated fadeIn">
 
+        {/* <br />
         <br />
-        <br />
-        <br />
+        <br /> */}
 
         <div className = "columns is-vcentered">
 
@@ -480,9 +481,9 @@ export default class Home extends React.Component {
 
     const otherCarrier = <div className="animated fadeIn">
 
+        {/* <br />
         <br />
-        <br />
-        <br />
+        <br /> */}
 
         <div className = "columns is-vcentered">
 
@@ -578,14 +579,14 @@ export default class Home extends React.Component {
                 
                 <div className="column">
                     <button name="other" disabled={this.state.carrier == "other"} className={`button is-medium is-success`} onClick={this.handleCarrierClick}>Other</button>
-                </div>
+                </div> 
 
             </div>
 
         </div>
 
 
-
+        {this.state.carrier && <UsedTabletHelp />}
 
 
         {(this.state.carrier == "T-Mobile") && tmobile}
@@ -638,6 +639,8 @@ export default class Home extends React.Component {
         </div>
 
         {this.state.country == "the US" && whichCarrier}
+
+        {this.state.country && this.state.country != "the US" && <UsedTabletHelp />}
 
         {this.state.country && this.state.country != "the US" && otherCarrier}
 
