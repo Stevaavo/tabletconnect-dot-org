@@ -38,6 +38,8 @@ export default class Header extends React.Component {
                 <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
 
+                <meta property="og:image" content="/static/og_image_b.png" />
+
             </NextHead>
 
                 <nav className="navbar" role="navigation" aria-label="main navigation">
