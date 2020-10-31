@@ -285,6 +285,16 @@ export default class Home extends React.Component {
             <div className="columns is-vcentered">
 
               <div className="column has-text-centered">
+                <TrackedLink href="http://sparechangenews.net/2020/10/cambridge-based-tabletconnect-helps-families-worldwide-communicate-face-to-face-during-covid-19/">
+                  <img src="/static/scn-big-icon2-reduced-size.png" height="50%"/>
+                </TrackedLink>
+
+                <br className="is-hidden-tablet" />
+                <br className="is-hidden-tablet" />
+                <br className="is-hidden-tablet" />
+              </div>
+
+              <div className="column has-text-centered">
                 <TrackedLink href="https://hackaday.com/2020/04/25/checking-in-on-relatives-using-old-android-tablets/">
                   <img src="/static/hackaday_logo_halfsize.png" height="50%"/>
                 </TrackedLink>
